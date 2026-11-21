@@ -2016,8 +2016,35 @@
       "source": "04. Model_Analysis/수면프로젝트_1-10_통합원고.md",
       "uploaded": "README.md",
       "source_sha256": "780278b9cb7eee6de9a4c815355b3f65b0837877ae6c03d23cd1e388e8803006",
-      "uploaded_sha256": "01c139b6f4e9bb03b12e0b18f25c40567eefe47839fd18d8dd482c17b326708b",
+      "uploaded_sha256": "cb818f9472b34cb3d85aaa4865473d4e8f657767ccca9905c9e562ed1e1eab91",
       "unchanged_bytes": false
     }
-  ]
+  ],
+  "generated_blog_figures": {
+    "script": "코드/make_blog_figures.py",
+    "input_files": [
+      "데이터/전처리/summary.json",
+      "실험결과/교차검증/selection.json",
+      "실험결과/교차검증/cv_summary.csv"
+    ],
+    "note": "Timeline is explicitly illustrative. Other figures describe existing data, model settings and saved CV results; no new training.",
+    "files": [
+      {
+        "uploaded": "그림/10_sleep_timeline.png",
+        "sha256": "10bb0186f692e7d3bc5a1cbe831e1c5d0f587e3e8f5b9a04bcd198314f307d80"
+      },
+      {
+        "uploaded": "그림/11_project_workflow.png",
+        "sha256": "02b3966c3113da8c03b3f9d28a1aabf13654eb8e9b68464b73bd44cb68049bd6"
+      },
+      {
+        "uploaded": "그림/12_model_architecture.png",
+        "sha256": "1f86b061be21df8c6c88942756770bbdcfc705b9b0cf34764b39689711dce5d2"
+      },
+      {
+        "uploaded": "그림/13_cv_model_comparison.png",
+        "sha256": "fbd0271d2cb84f6564dd7904220385e05d1b226d1fcd2b72dcb0fb2ae943a9f6"
+      }
+    ]
+  }
 }

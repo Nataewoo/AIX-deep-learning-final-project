@@ -14,5 +14,11 @@
 | [07_input_target_distributions.png](07_input_target_distributions.png) | 입력·정답 분포 |
 | [08_primary_test_comparison.png](08_primary_test_comparison.png) | 모델별 평가 성능 |
 | [09_B_duration_behavior.png](09_B_duration_behavior.png) | 후보 수면 구간에 따른 B의 예측 |
+| [10_sleep_timeline.png](10_sleep_timeline.png) | 입면 지연과 수면 구간을 구분하는 가상 시간 예시 |
+| [11_project_workflow.png](11_project_workflow.png) | 사람 단위 학습·평가 분리와 전체 진행 흐름 |
+| [12_model_architecture.png](12_model_architecture.png) | 최종 A·B 모델의 입력·처리·출력 구조 |
+| [13_cv_model_comparison.png](13_cv_model_comparison.png) | 저장된 내부 교차검증 성능 비교 |
 
 제공된 PNG를 그대로 보존했다. 각 그래프의 해석과 한계는 [README 본문](../README.md)에 있다.
+
+10~13번은 본문 설명을 위해 추가한 그림이다. 시간 예시는 가상이며, 나머지는 저장된 데이터 규모·선택 설정·교차검증 결과를 사용했다. [생성 코드](../코드/make_blog_figures.py)로 다시 만들 수 있다.

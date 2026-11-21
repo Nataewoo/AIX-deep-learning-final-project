@@ -13,6 +13,7 @@
 | `compare_trees.py` | Random Forest·XGBoost 추가 비교 |
 | `verify.py` | 과거 이력과 저장 모델의 PyTorch 예측 검증 |
 | `analyze_results.py` | NumPy 예측 검산·지표 재계산·오차 분석·그래프 생성 |
+| `make_blog_figures.py` | 기존 자료·모델 설정·검증 결과로 본문 설명 그림 4개 생성 |
 | `predict.py` | 학습 없이 저장 모델로 예측 시연 |
 | `paths.py` | 저장소의 공통 파일 경로 |
 

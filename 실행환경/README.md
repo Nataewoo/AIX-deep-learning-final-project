@@ -57,3 +57,11 @@ py -3.12 -m venv .venv-analysis
 ```
 
 현재 저장소에서 실제 확인한 환경과 실행 범위는 [재검증 기록](../실험결과/재검증/실행확인.json)에 별도로 남긴다. 원래 학습 전체를 다시 실행했다는 의미는 아니다.
+
+## 본문 설명 그림 다시 만들기
+
+같은 검산 환경에서 다음 명령으로 시간 예시·전체 흐름·모델 구조·교차검증 비교 그림 4개를 생성한다. 모델을 재학습하지 않으며, `--output`을 생략하면 `그림/`의 해당 파일을 갱신한다.
+
+```powershell
+.\.venv-demo\Scripts\python.exe 코드/make_blog_figures.py --output .recheck/blog-figures
+```
