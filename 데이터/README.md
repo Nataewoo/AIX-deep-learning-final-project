@@ -1,0 +1,18 @@
+# 데이터
+
+| 폴더 | 내용 |
+| --- | --- |
+| [원본](원본) | MeLiDos 187개 CSV · 국내 수면일지 1개 CSV |
+| [분할](분할) | 원본 행의 참가자 단위 Train·Validation·Test 배정 |
+| [전처리](전처리) | 실제 모델 입력과 정답, 결측·유효 기록 요약 |
+
+| 용도 | 분할 파일 | 참가자 / 기록 |
+| --- | --- | --- |
+| 해외 전체 학습 대상 | `분할/train_melidos.csv` | 147명 / 1,020건 |
+| 5회 교차검증 | `train_fold_N.csv` + `validation_fold_N.csv` | 같은 번호끼리 사용 |
+| 해외 별도 평가 | `test_melidos.csv` | 37명 / 262건 |
+| 국내 외부 평가 | `test_korea.csv` | 49명 / 1,372건, 모델 A만 평가 |
+
+전처리 폴더의 **`train_melidos_all.csv`가 최종 학습용 전체 자료**다. 전처리의 `train_melidos.csv`와 `validation_melidos.csv`는 1회차 파일의 호환용 사본이다. 해외 별도 평가 자료는 `test_melidos.csv`로 구분한다.
+
+참가자별 그룹은 [split_info.json](분할/split_info.json)과 [cv_groups.csv](../실험결과/교차검증/cv_groups.csv)에 있다. 입력 열은 [모델 전처리 정보](../모델/전처리정보.json), 공개 데이터 출처는 [출처](출처.md)를 참고한다.

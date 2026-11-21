@@ -1,0 +1,47 @@
+{
+  "input_type": "illustrative_history",
+  "models": {
+    "A": "모델/최종/model_A_selected.joblib",
+    "B": "모델/최종/model_B_selected.joblib"
+  },
+  "features": {
+    "past3_latency_median_min": 25.0,
+    "past3_latency_n": 3,
+    "prev_sleep_interval_min": 480.0,
+    "past3_sleep_interval_median_min": 450.0,
+    "past3_sleep_interval_n": 3
+  },
+  "wake_time": "08:00",
+  "predicted_latency_minutes": 23.76450538635254,
+  "candidates": [
+    {
+      "sleep_interval_minutes": 420.0,
+      "predicted_quality": 3.612072229385376,
+      "bedtime": "00:36",
+      "bedtime_day_relative_to_wake": 0,
+      "meets_minimum_interval": false
+    },
+    {
+      "sleep_interval_minutes": 450.0,
+      "predicted_quality": 3.7055788040161133,
+      "bedtime": "00:06",
+      "bedtime_day_relative_to_wake": 0,
+      "meets_minimum_interval": true
+    },
+    {
+      "sleep_interval_minutes": 480.0,
+      "predicted_quality": 3.7641096115112305,
+      "bedtime": "23:36",
+      "bedtime_day_relative_to_wake": -1,
+      "meets_minimum_interval": true
+    }
+  ],
+  "selected_candidate": {
+    "sleep_interval_minutes": 480.0,
+    "predicted_quality": 3.7641096115112305,
+    "bedtime": "23:36",
+    "bedtime_day_relative_to_wake": -1,
+    "meets_minimum_interval": true
+  },
+  "note": "Model behavior example. Sleep interval includes nocturnal awakenings; efficacy of changing bedtime was not tested."
+}

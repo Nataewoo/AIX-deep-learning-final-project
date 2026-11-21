@@ -1,0 +1,127 @@
+{
+  "verified_date": "2026-11-21",
+  "python": "3.10.11",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "matplotlib": "3.10.8",
+    "scipy": "1.15.3",
+    "torch": "2.7.1+cu118"
+  },
+  "training_rerun": false,
+  "original_source_files_modified": false,
+  "source_model_parameters_changed": false,
+  "pytorch_saved_model_checks": "8 comparisons passed using verify.verify_saved_models; original full training not rerun.",
+  "numpy_saved_model_checks": [
+    {
+      "task": "A",
+      "role": "selected",
+      "dataset": "korea_all",
+      "n": 1372,
+      "max_absolute_prediction_difference": 1.52587890625e-05
+    },
+    {
+      "task": "A",
+      "role": "selected",
+      "dataset": "korea_last7",
+      "n": 343,
+      "max_absolute_prediction_difference": 7.629394538355427e-06
+    },
+    {
+      "task": "A",
+      "role": "selected",
+      "dataset": "melidos_holdout",
+      "n": 259,
+      "max_absolute_prediction_difference": 7.62939453125e-06
+    },
+    {
+      "task": "A",
+      "role": "mlp",
+      "dataset": "korea_all",
+      "n": 1372,
+      "max_absolute_prediction_difference": 1.52587890625e-05
+    },
+    {
+      "task": "A",
+      "role": "mlp",
+      "dataset": "korea_last7",
+      "n": 343,
+      "max_absolute_prediction_difference": 7.629394538355427e-06
+    },
+    {
+      "task": "A",
+      "role": "mlp",
+      "dataset": "melidos_holdout",
+      "n": 259,
+      "max_absolute_prediction_difference": 7.62939453125e-06
+    },
+    {
+      "task": "B",
+      "role": "selected",
+      "dataset": "melidos_holdout",
+      "n": 259,
+      "max_absolute_prediction_difference": 4.768371586472142e-07
+    },
+    {
+      "task": "B",
+      "role": "mlp",
+      "dataset": "melidos_holdout",
+      "n": 259,
+      "max_absolute_prediction_difference": 4.768371586472142e-07
+    }
+  ],
+  "checks": [
+    {
+      "check": "regenerated_participant_splits",
+      "status": "PASS",
+      "detail": "All 13 split CSVs match supplied rows and values; no new random groups."
+    },
+    {
+      "check": "all_prepared_data",
+      "status": "PASS",
+      "detail": "All 15 model-input CSVs and summary.json match reconstruction from full original CSVs."
+    },
+    {
+      "check": "evaluation_fold_assignment",
+      "status": "PASS",
+      "detail": "evaluate.py uses the exact published five participant groups."
+    },
+    {
+      "check": "python_syntax",
+      "status": "PASS",
+      "detail": "Every published Python module compiles."
+    },
+    {
+      "check": "existing_readme_preserved",
+      "status": "PASS",
+      "detail": "All previous README lines retained; only a navigation section inserted."
+    },
+    {
+      "check": "markdown_local_links",
+      "status": "PASS",
+      "detail": "80 local links and images resolve."
+    },
+    {
+      "check": "saved_model_demo",
+      "status": "PASS",
+      "detail": "Published output reproduced; no-history, missing-history, midnight and infeasible-candidate cases verified."
+    },
+    {
+      "check": "original_material_preserved",
+      "status": "PASS",
+      "detail": "All 288 source files remain unchanged; 281 uploaded files are byte-identical copies."
+    },
+    {
+      "check": "independent_saved_result_audit",
+      "status": "PASS",
+      "detail": "12 original-data/metric/preprocessing checks and 8 independent NumPy saved-model comparisons passed."
+    }
+  ],
+  "limits": [
+    "Original full hyperparameter search and model training were not rerun.",
+    "PyTorch saved-model inference and NumPy inference were both verified.",
+    "Historical analysis outputs remain under 실험결과/상세분석; new checks are stored separately."
+  ]
+}

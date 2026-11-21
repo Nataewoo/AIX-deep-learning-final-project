@@ -1,0 +1,70 @@
+[
+  {
+    "task": "A",
+    "model": "random_forest",
+    "params": {
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "features": [
+      "past3_latency_median_min",
+      "past3_latency_n",
+      "prev_sleep_interval_min",
+      "past3_sleep_interval_median_min",
+      "past3_sleep_interval_n"
+    ],
+    "cv_macro_mae": 31.787330229958837
+  },
+  {
+    "task": "A",
+    "model": "xgboost",
+    "params": {
+      "max_depth": 1,
+      "n_estimators": 80,
+      "learning_rate": 0.05
+    },
+    "features": [
+      "past3_latency_median_min",
+      "past3_latency_n",
+      "prev_sleep_interval_min",
+      "past3_sleep_interval_median_min",
+      "past3_sleep_interval_n"
+    ],
+    "cv_macro_mae": 29.291586941584256
+  },
+  {
+    "task": "B",
+    "model": "random_forest",
+    "params": {
+      "max_depth": 6,
+      "min_samples_leaf": 15
+    },
+    "features": [
+      "past3_latency_median_min",
+      "past3_latency_n",
+      "prev_sleep_interval_min",
+      "past3_sleep_interval_median_min",
+      "past3_sleep_interval_n",
+      "sleep_interval_min"
+    ],
+    "cv_macro_mae": 0.7788633175898484
+  },
+  {
+    "task": "B",
+    "model": "xgboost",
+    "params": {
+      "max_depth": 2,
+      "n_estimators": 80,
+      "learning_rate": 0.05
+    },
+    "features": [
+      "past3_latency_median_min",
+      "past3_latency_n",
+      "prev_sleep_interval_min",
+      "past3_sleep_interval_median_min",
+      "past3_sleep_interval_n",
+      "sleep_interval_min"
+    ],
+    "cv_macro_mae": 0.7830634682865357
+  }
+]

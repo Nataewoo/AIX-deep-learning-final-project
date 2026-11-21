@@ -1,0 +1,101 @@
+{
+  "A": {
+    "selected": {
+      "model": "mlp",
+      "params": {
+        "width": 16,
+        "epochs": 60
+      },
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n"
+      ]
+    },
+    "baseline": {
+      "model": "baseline",
+      "params": {},
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n"
+      ]
+    },
+    "mlp": {
+      "model": "mlp",
+      "params": {
+        "width": 16,
+        "epochs": 60
+      },
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n"
+      ]
+    }
+  },
+  "B": {
+    "selected": {
+      "model": "mlp",
+      "params": {
+        "width": 16,
+        "epochs": 60
+      },
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n",
+        "sleep_interval_min"
+      ]
+    },
+    "baseline": {
+      "model": "baseline",
+      "params": {},
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n",
+        "sleep_interval_min"
+      ]
+    },
+    "mlp": {
+      "model": "mlp",
+      "params": {
+        "width": 16,
+        "epochs": 60
+      },
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n",
+        "sleep_interval_min"
+      ]
+    },
+    "without_duration": {
+      "model": "random_forest",
+      "params": {
+        "max_depth": 6,
+        "min_samples_leaf": 15
+      },
+      "features": [
+        "past3_latency_median_min",
+        "past3_latency_n",
+        "prev_sleep_interval_min",
+        "past3_sleep_interval_median_min",
+        "past3_sleep_interval_n"
+      ]
+    }
+  }
+}

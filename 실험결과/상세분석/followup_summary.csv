@@ -1,0 +1,4 @@
+﻿split,records_min,records_median,records_max,span_days_min,span_days_median,span_days_max
+test_korea,28,28.0,28,28,28.0,28
+train_melidos,2,7.0,9,4,7.0,11
+validation_melidos,6,7.0,9,6,7.0,9

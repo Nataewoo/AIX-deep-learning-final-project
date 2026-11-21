@@ -1,0 +1,2023 @@
+{
+  "source_root_name": "기말프로젝트",
+  "policy": "Original source folder untouched. One full raw copy; canonical 01/02/03 data and models; 04 article, figures and analyses. No submission PDF, reference PDFs, archives or chat memos.",
+  "adaptations": "Code paths and article links updated. Model grids and feature formulas preserved. Added paths.py, make_splits.py and predict.py.",
+  "files": [
+    {
+      "source": "01. Data_Raw/raw/Korea/sleep_diary.csv",
+      "uploaded": "데이터/원본/Korea/sleep_diary.csv",
+      "source_sha256": "6eb143e1bc59f6adfa579b9ac6d795c7f88d2215161b0d89fcee31e5f0d86813",
+      "uploaded_sha256": "6eb143e1bc59f6adfa579b9ac6d795c7f88d2215161b0d89fcee31e5f0d86813",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S001/BAUA_S001_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S001/BAUA_S001_sleepdiary.csv",
+      "source_sha256": "ec451bc13a763ddaa15162ef1e1c01ffe2346e7fd33d0e7a3e28e9b74efbecd7",
+      "uploaded_sha256": "ec451bc13a763ddaa15162ef1e1c01ffe2346e7fd33d0e7a3e28e9b74efbecd7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S002/BAUA_S002_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S002/BAUA_S002_sleepdiary_corrected.csv",
+      "source_sha256": "40c8f16d922a0e4e8278dceb7cf4dbc54846c2516dd06b8f0ac0a76da1c40ece",
+      "uploaded_sha256": "40c8f16d922a0e4e8278dceb7cf4dbc54846c2516dd06b8f0ac0a76da1c40ece",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S003/BAUA_S003_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S003/BAUA_S003_sleepdiary_corrected.csv",
+      "source_sha256": "ca781be020ed796f73928b0eb93aa28f5087e6421c9582ee71b1d9ed45089e4c",
+      "uploaded_sha256": "ca781be020ed796f73928b0eb93aa28f5087e6421c9582ee71b1d9ed45089e4c",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S004/BAUA_S004_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S004/BAUA_S004_sleepdiary_corrected.csv",
+      "source_sha256": "e9204aef5ee78c17bef56fe3af246aae9477837bda82d4c319b901e392fa66cd",
+      "uploaded_sha256": "e9204aef5ee78c17bef56fe3af246aae9477837bda82d4c319b901e392fa66cd",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S005/BAUA_S005_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S005/BAUA_S005_sleepdiary_corrected.csv",
+      "source_sha256": "ecaa5d7ada5216ee680e9005a2c5fc72e07227dc92243bc3c33e139fa7242cce",
+      "uploaded_sha256": "ecaa5d7ada5216ee680e9005a2c5fc72e07227dc92243bc3c33e139fa7242cce",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S006/BAUA_S006_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S006/BAUA_S006_sleepdiary_corrected.csv",
+      "source_sha256": "fcfbdba11d6f1450569160e5d854d28837b49f8dcdd829a153ef01809a450ad0",
+      "uploaded_sha256": "fcfbdba11d6f1450569160e5d854d28837b49f8dcdd829a153ef01809a450ad0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S007/BAUA_S007_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S007/BAUA_S007_sleepdiary_corrected.csv",
+      "source_sha256": "97bd05e8982098b40317087783104c393c2ee2091e09de0635d13d3dd4522b03",
+      "uploaded_sha256": "97bd05e8982098b40317087783104c393c2ee2091e09de0635d13d3dd4522b03",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S008/BAUA_S008_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S008/BAUA_S008_sleepdiary_corrected.csv",
+      "source_sha256": "7e6f5fe788accbb4b2b26d5409422930c91bf23290b752c2e0ca6e84b66bc3ed",
+      "uploaded_sha256": "7e6f5fe788accbb4b2b26d5409422930c91bf23290b752c2e0ca6e84b66bc3ed",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S009/BAUA_S009_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S009/BAUA_S009_sleepdiary_corrected.csv",
+      "source_sha256": "12a0d3b63a4a4dab098bb9bc2fa96a1c5bfa2b371ff2d572671cff086ce07f15",
+      "uploaded_sha256": "12a0d3b63a4a4dab098bb9bc2fa96a1c5bfa2b371ff2d572671cff086ce07f15",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S010/BAUA_S010_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S010/BAUA_S010_sleepdiary_corrected.csv",
+      "source_sha256": "3998846e17988d255bf9c62960129e8c4594af271ca06c2ad9a34c0029d3ba91",
+      "uploaded_sha256": "3998846e17988d255bf9c62960129e8c4594af271ca06c2ad9a34c0029d3ba91",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S011/BAUA_S011_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S011/BAUA_S011_sleepdiary_corrected.csv",
+      "source_sha256": "1303964232bbc79b2d044da6b89e370ffaf27a594d06fc6d606d1281f0ecb3b1",
+      "uploaded_sha256": "1303964232bbc79b2d044da6b89e370ffaf27a594d06fc6d606d1281f0ecb3b1",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S012/BAUA_S012_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S012/BAUA_S012_sleepdiary_corrected.csv",
+      "source_sha256": "bb4354b3fcf4bddb0ccae9284bd2d081007fc1128c1830c5a1700fb5816deead",
+      "uploaded_sha256": "bb4354b3fcf4bddb0ccae9284bd2d081007fc1128c1830c5a1700fb5816deead",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S013/BAUA_S013_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S013/BAUA_S013_sleepdiary_corrected.csv",
+      "source_sha256": "efaad1ac6d0c296c4f1f7c35b13f25ce95b81642a412768adc2a352f296ff998",
+      "uploaded_sha256": "efaad1ac6d0c296c4f1f7c35b13f25ce95b81642a412768adc2a352f296ff998",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S014/BAUA_S014_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S014/BAUA_S014_sleepdiary.csv",
+      "source_sha256": "8cc7a3926b023be73e13d935b61039e27f585f0dd414ab488d35ffcd530a710b",
+      "uploaded_sha256": "8cc7a3926b023be73e13d935b61039e27f585f0dd414ab488d35ffcd530a710b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S015/BAUA_S015_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S015/BAUA_S015_sleepdiary_corrected.csv",
+      "source_sha256": "a93a0eb0a6e38da9779a142ace283728ddf7a5c0a633658880f71a32fba8e1c7",
+      "uploaded_sha256": "a93a0eb0a6e38da9779a142ace283728ddf7a5c0a633658880f71a32fba8e1c7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S016/BAUA_S016_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S016/BAUA_S016_sleepdiary_corrected.csv",
+      "source_sha256": "9045b512d093519214d60195ef6e64861383d85e836fe46deeba93a821eece05",
+      "uploaded_sha256": "9045b512d093519214d60195ef6e64861383d85e836fe46deeba93a821eece05",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S017/BAUA_S017_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S017/BAUA_S017_sleepdiary_corrected.csv",
+      "source_sha256": "89569abc39bbb5f6604df2ae1555a879290f5235591d3fc95eaeccca95b181e1",
+      "uploaded_sha256": "89569abc39bbb5f6604df2ae1555a879290f5235591d3fc95eaeccca95b181e1",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S018/BAUA_S018_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S018/BAUA_S018_sleepdiary.csv",
+      "source_sha256": "162ade2f6d8e245862ebcacbfb38cfd39dd09fdba02d7b0e94e413819a10bffc",
+      "uploaded_sha256": "162ade2f6d8e245862ebcacbfb38cfd39dd09fdba02d7b0e94e413819a10bffc",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S019/BAUA_S019_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S019/BAUA_S019_sleepdiary.csv",
+      "source_sha256": "6fe5ffe386f782df8d7005f4fcf5d46078e9641e0bb6bd220a338edaab700b8f",
+      "uploaded_sha256": "6fe5ffe386f782df8d7005f4fcf5d46078e9641e0bb6bd220a338edaab700b8f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S020/BAUA_S020_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S020/BAUA_S020_sleepdiary.csv",
+      "source_sha256": "50ced6cf3aecdbc8ff5d634f2d326fcbf62daecbad2af8af9e0caa2713af7ed0",
+      "uploaded_sha256": "50ced6cf3aecdbc8ff5d634f2d326fcbf62daecbad2af8af9e0caa2713af7ed0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S021/BAUA_S021_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S021/BAUA_S021_sleepdiary.csv",
+      "source_sha256": "c7d10d0c05b2154885f59ba617cf93a8826839b094da79b5057faee4315a03f5",
+      "uploaded_sha256": "c7d10d0c05b2154885f59ba617cf93a8826839b094da79b5057faee4315a03f5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S022/BAUA_S022_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S022/BAUA_S022_sleepdiary_corrected.csv",
+      "source_sha256": "6b47e229d19c0671f213bf7b001044acfffcfd1c54bbc08d68c8d3692b52c7a4",
+      "uploaded_sha256": "6b47e229d19c0671f213bf7b001044acfffcfd1c54bbc08d68c8d3692b52c7a4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S023/BAUA_S023_sleepdiary.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S023/BAUA_S023_sleepdiary.csv",
+      "source_sha256": "f859e944adf30c3b2dea966f18e6f99964d29f4f27b364e42870bb8b66e0ca66",
+      "uploaded_sha256": "f859e944adf30c3b2dea966f18e6f99964d29f4f27b364e42870bb8b66e0ca66",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S024/BAUA_S024_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S024/BAUA_S024_sleepdiary_corrected.csv",
+      "source_sha256": "f459e123b38dbe9194a9cba1b20e98b837aaa30781f7f49777472f3cce9cfe64",
+      "uploaded_sha256": "f459e123b38dbe9194a9cba1b20e98b837aaa30781f7f49777472f3cce9cfe64",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/BAUA/BAUA_S025/BAUA_S025_sleepdiary_corrected.csv",
+      "uploaded": "데이터/원본/MeLiDos/BAUA/BAUA_S025/BAUA_S025_sleepdiary_corrected.csv",
+      "source_sha256": "f4bfe74529192cbc2f1a8cb13196ee129d1ef6856d6c27e89cd3f5a0588fc922",
+      "uploaded_sha256": "f4bfe74529192cbc2f1a8cb13196ee129d1ef6856d6c27e89cd3f5a0588fc922",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S003/FUSPCEU_S003_sleepdiary_20241014.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S003/FUSPCEU_S003_sleepdiary_20241014.csv",
+      "source_sha256": "9a56c7331c5d7bfce64f1619a3a2ec27e0ceb6ccc021f79e1ac51d2ac1b9d853",
+      "uploaded_sha256": "9a56c7331c5d7bfce64f1619a3a2ec27e0ceb6ccc021f79e1ac51d2ac1b9d853",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S004/FUSPCEU_S004_sleepdiary_20241014.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S004/FUSPCEU_S004_sleepdiary_20241014.csv",
+      "source_sha256": "6ba38f663ab35b4f1831cee43d92d40e37b5d837650fc6d22d9ca832a3e62a89",
+      "uploaded_sha256": "6ba38f663ab35b4f1831cee43d92d40e37b5d837650fc6d22d9ca832a3e62a89",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S005/FUSPCEU_S005_sleepdiary_20241021.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S005/FUSPCEU_S005_sleepdiary_20241021.csv",
+      "source_sha256": "e3c696450f81d8f9f37d62c8ec7f72858b0d070a943adfef36c28fa85269b1a9",
+      "uploaded_sha256": "e3c696450f81d8f9f37d62c8ec7f72858b0d070a943adfef36c28fa85269b1a9",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S006/FUSPCEU_S006_sleepdiary_20241021.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S006/FUSPCEU_S006_sleepdiary_20241021.csv",
+      "source_sha256": "11ef626d272f1983b59d8ae56a8138b8b8639403ba7a725fbeabd2035ed25601",
+      "uploaded_sha256": "11ef626d272f1983b59d8ae56a8138b8b8639403ba7a725fbeabd2035ed25601",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S007/FUSPCEU_S007_sleepdiary_20241028.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S007/FUSPCEU_S007_sleepdiary_20241028.csv",
+      "source_sha256": "0033c0c128b7089f91bdd946728a281207344aebc9de063436278d1be90528e6",
+      "uploaded_sha256": "0033c0c128b7089f91bdd946728a281207344aebc9de063436278d1be90528e6",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S008/FUSPCEU_S008_sleepdiary_20241028.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S008/FUSPCEU_S008_sleepdiary_20241028.csv",
+      "source_sha256": "2b99113bf401ef1ea518da14e7d6b50d3f29b01cfce7017364551835fc9c7c3b",
+      "uploaded_sha256": "2b99113bf401ef1ea518da14e7d6b50d3f29b01cfce7017364551835fc9c7c3b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S009/FUSPCEU_S009_sleepdiary_20241111.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S009/FUSPCEU_S009_sleepdiary_20241111.csv",
+      "source_sha256": "de4faebfd551cc33f421626aac5f00366bc6367f58d5e925b7ef2301e7e723b8",
+      "uploaded_sha256": "de4faebfd551cc33f421626aac5f00366bc6367f58d5e925b7ef2301e7e723b8",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S010/FUSPCEU_S010_sleepdiary_20241111.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S010/FUSPCEU_S010_sleepdiary_20241111.csv",
+      "source_sha256": "56c27f4594eadd353b5042cfd0473cee3e63b7a53d6f62460ee613e4d5d4a98f",
+      "uploaded_sha256": "56c27f4594eadd353b5042cfd0473cee3e63b7a53d6f62460ee613e4d5d4a98f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S011/FUSPCEU_S011_sleepdiary_20241118.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S011/FUSPCEU_S011_sleepdiary_20241118.csv",
+      "source_sha256": "bf7e4c46aebc3991cd305dbf70fe701560a6e552ca98ba99c575d32bad00a4a3",
+      "uploaded_sha256": "bf7e4c46aebc3991cd305dbf70fe701560a6e552ca98ba99c575d32bad00a4a3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S012/FUSPCEU_S012_sleepdiary.20241209.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S012/FUSPCEU_S012_sleepdiary.20241209.csv",
+      "source_sha256": "c9e4b2d545fa17c414b595e63347ecdd8d9f641934fed22de08c3e5be307c272",
+      "uploaded_sha256": "c9e4b2d545fa17c414b595e63347ecdd8d9f641934fed22de08c3e5be307c272",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S013/FUSPCEU_S013_sleepdiary_20241125.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S013/FUSPCEU_S013_sleepdiary_20241125.csv",
+      "source_sha256": "a52c91d572716955410d549559ea9456fd497d444ed11f7c993c47a56c256fef",
+      "uploaded_sha256": "a52c91d572716955410d549559ea9456fd497d444ed11f7c993c47a56c256fef",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S014/FUSPCEU_S014_sleepdiary_20241125.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S014/FUSPCEU_S014_sleepdiary_20241125.csv",
+      "source_sha256": "8cf9f961a4232da0f07573871087ce523fdfd05f2b8c278f17f7fb47837e8988",
+      "uploaded_sha256": "8cf9f961a4232da0f07573871087ce523fdfd05f2b8c278f17f7fb47837e8988",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S015/FUSPCEU_S015_sleepdiary_20241202.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S015/FUSPCEU_S015_sleepdiary_20241202.csv",
+      "source_sha256": "54ff94b4060679224bb763d743cced02fe4fd2468f318ba052e1b99ae648e4e8",
+      "uploaded_sha256": "54ff94b4060679224bb763d743cced02fe4fd2468f318ba052e1b99ae648e4e8",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S016/FUSPCEU_S016_sleepdiary_20241202.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S016/FUSPCEU_S016_sleepdiary_20241202.csv",
+      "source_sha256": "ff1179cd4962a8e935a94526946ae5b817c8735172d4d17dd13f136542086d2f",
+      "uploaded_sha256": "ff1179cd4962a8e935a94526946ae5b817c8735172d4d17dd13f136542086d2f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S017/FUSPCEU_S017_sleepdiary_20241209.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S017/FUSPCEU_S017_sleepdiary_20241209.csv",
+      "source_sha256": "f8d5b6813d7bc49a9732b5c45b6511516a644573842e641c790e42f604333f97",
+      "uploaded_sha256": "f8d5b6813d7bc49a9732b5c45b6511516a644573842e641c790e42f604333f97",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S018/FUSPCEU_S018_sleepdiary_20241216.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S018/FUSPCEU_S018_sleepdiary_20241216.csv",
+      "source_sha256": "d93c983d554ce97b9eed3a9d9b504c3fc435a05ac94c6510dfcb1034cb2a721e",
+      "uploaded_sha256": "d93c983d554ce97b9eed3a9d9b504c3fc435a05ac94c6510dfcb1034cb2a721e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S019/FUSPCEU_S019_sleepdiary_20241216.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S019/FUSPCEU_S019_sleepdiary_20241216.csv",
+      "source_sha256": "4645ba4350cdd076e3652fec4272710b3f93496a4660dc3a8956c08290d71d08",
+      "uploaded_sha256": "4645ba4350cdd076e3652fec4272710b3f93496a4660dc3a8956c08290d71d08",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S020/FUSPCEU_S020_sleepdiary_20250127.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S020/FUSPCEU_S020_sleepdiary_20250127.csv",
+      "source_sha256": "3a6a5c57ed99d72d736d3ab475d9d8394376f3b1776c745858185eacfbb3809c",
+      "uploaded_sha256": "3a6a5c57ed99d72d736d3ab475d9d8394376f3b1776c745858185eacfbb3809c",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S021/FUSPCEU_S021_sleepdiary.20250127.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S021/FUSPCEU_S021_sleepdiary.20250127.csv",
+      "source_sha256": "6d442e380d3f0934e711476f6a8a21d726c0732a85f7ae27018cc6de425ef425",
+      "uploaded_sha256": "6d442e380d3f0934e711476f6a8a21d726c0732a85f7ae27018cc6de425ef425",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S022/FUSPCEU_S022_sleepdiary_20250203.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S022/FUSPCEU_S022_sleepdiary_20250203.csv",
+      "source_sha256": "4baf92ef518196c5dd9f5d4bd79918a218d12db10f2de3e5dbb38263eac6f547",
+      "uploaded_sha256": "4baf92ef518196c5dd9f5d4bd79918a218d12db10f2de3e5dbb38263eac6f547",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S023/FUSPCEU_S023_sleepdiary_20250203.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S023/FUSPCEU_S023_sleepdiary_20250203.csv",
+      "source_sha256": "295be05ef144da5d0e58e54b9a90fd7cb26d3feb6c284a5baf9de26ceb7faf8c",
+      "uploaded_sha256": "295be05ef144da5d0e58e54b9a90fd7cb26d3feb6c284a5baf9de26ceb7faf8c",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S024/FUSPCEU_S024_sleepdiary_20250210.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S024/FUSPCEU_S024_sleepdiary_20250210.csv",
+      "source_sha256": "8be519e5e0f4c6e2a4962f8b7d208ac7ac128457789812a18b600fa055274ccd",
+      "uploaded_sha256": "8be519e5e0f4c6e2a4962f8b7d208ac7ac128457789812a18b600fa055274ccd",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/FUSPCEU/FUSPCEU_S025/FUSPCEU_S025_sleepdiary_20250210.csv",
+      "uploaded": "데이터/원본/MeLiDos/FUSPCEU/FUSPCEU_S025/FUSPCEU_S025_sleepdiary_20250210.csv",
+      "source_sha256": "5dae12b4043a5cf212b9b9c8536e4d494fd126b132d695b54b538d122093e999",
+      "uploaded_sha256": "5dae12b4043a5cf212b9b9c8536e4d494fd126b132d695b54b538d122093e999",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S001/IZTECH_S001_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S001/IZTECH_S001_sleepdiary_20250616.csv",
+      "source_sha256": "9e7d5b17b993d8c91e90fd33bc7e9a70ad3c33ea3f7a81b3b4d5d51d01779971",
+      "uploaded_sha256": "9e7d5b17b993d8c91e90fd33bc7e9a70ad3c33ea3f7a81b3b4d5d51d01779971",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S002/IZTECH_S002_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S002/IZTECH_S002_sleepdiary_20250616.csv",
+      "source_sha256": "7118d76ef86090e90d00356c50d83a2b05e8f14ee5281dc18f640a7815878e4b",
+      "uploaded_sha256": "7118d76ef86090e90d00356c50d83a2b05e8f14ee5281dc18f640a7815878e4b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S003/IZTECH_S003_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S003/IZTECH_S003_sleepdiary_20250616.csv",
+      "source_sha256": "979287b49fdfcec11653e91073952f731a577999f125602c3423d7b16096e02f",
+      "uploaded_sha256": "979287b49fdfcec11653e91073952f731a577999f125602c3423d7b16096e02f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S004/IZTECH_S004_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S004/IZTECH_S004_sleepdiary_20250616.csv",
+      "source_sha256": "0a82a1cc85225d496d7047c30ec305e4112642ea0a040a0607ca8862daaa2312",
+      "uploaded_sha256": "0a82a1cc85225d496d7047c30ec305e4112642ea0a040a0607ca8862daaa2312",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S005/IZTECH_S005_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S005/IZTECH_S005_sleepdiary_20250616.csv",
+      "source_sha256": "8538ee1bd895aa2226e902bd98c7427e895f1ea369c22c8a6a178cd051c9cc03",
+      "uploaded_sha256": "8538ee1bd895aa2226e902bd98c7427e895f1ea369c22c8a6a178cd051c9cc03",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S006/IZTECH_S006_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S006/IZTECH_S006_sleepdiary_20250616.csv",
+      "source_sha256": "bd4f3f30bccb5f20c78bd00c9ae45f1a825b39427124f499ca915f8289339098",
+      "uploaded_sha256": "bd4f3f30bccb5f20c78bd00c9ae45f1a825b39427124f499ca915f8289339098",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S007/IZTECH_S007_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S007/IZTECH_S007_sleepdiary_20250616.csv",
+      "source_sha256": "c048d7be2052b52ff6729b0a21ad8994dfe7a98835d6c2ce375c9a6e40632578",
+      "uploaded_sha256": "c048d7be2052b52ff6729b0a21ad8994dfe7a98835d6c2ce375c9a6e40632578",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S008/IZTECH_S008_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S008/IZTECH_S008_sleepdiary_20250616.csv",
+      "source_sha256": "4e40dc80c2e180da3b59b7143d24e1f4f15511fa82c6f1f26b579984ea48365d",
+      "uploaded_sha256": "4e40dc80c2e180da3b59b7143d24e1f4f15511fa82c6f1f26b579984ea48365d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S009/IZTECH_S009_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S009/IZTECH_S009_sleepdiary_20250616.csv",
+      "source_sha256": "07766d3cbe8d658fe281d35ad568de3b1b46277021a0b009de363563a036818f",
+      "uploaded_sha256": "07766d3cbe8d658fe281d35ad568de3b1b46277021a0b009de363563a036818f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S010/IZTECH_S010_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S010/IZTECH_S010_sleepdiary_20250616.csv",
+      "source_sha256": "dcda97358101d67c2e7b7479af8024366df9c91ccbbf3e12f21e1cdb218a9da0",
+      "uploaded_sha256": "dcda97358101d67c2e7b7479af8024366df9c91ccbbf3e12f21e1cdb218a9da0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S011/IZTECH_S011_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S011/IZTECH_S011_sleepdiary_20250616.csv",
+      "source_sha256": "88ad53153c0441b8b7b145ffe8db1360c021ad568aa3d3b73356378daa9c2659",
+      "uploaded_sha256": "88ad53153c0441b8b7b145ffe8db1360c021ad568aa3d3b73356378daa9c2659",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S012/IZTECH_S012_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S012/IZTECH_S012_sleepdiary_20250616.csv",
+      "source_sha256": "6bfd85e4ec5865455f92003f72e420022b231c55802323a4db68b536104ebd00",
+      "uploaded_sha256": "6bfd85e4ec5865455f92003f72e420022b231c55802323a4db68b536104ebd00",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S013/IZTECH_S013_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S013/IZTECH_S013_sleepdiary_20250616.csv",
+      "source_sha256": "6380d531738e213bdc8dbf42ac1ca05a3955688579717acf805d827f24b10ddc",
+      "uploaded_sha256": "6380d531738e213bdc8dbf42ac1ca05a3955688579717acf805d827f24b10ddc",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S014/IZTECH_S014_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S014/IZTECH_S014_sleepdiary_20250616.csv",
+      "source_sha256": "03f1de6ae29c81ee6d5a7508e765f2b0861047893b02622b7be98e1c9bf820b2",
+      "uploaded_sha256": "03f1de6ae29c81ee6d5a7508e765f2b0861047893b02622b7be98e1c9bf820b2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S015/IZTECH_S015_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S015/IZTECH_S015_sleepdiary_20250616.csv",
+      "source_sha256": "e359bfa434ab1668857f7ecf3b421a931aa8494b4350d2bc3cd13da36dfe5fef",
+      "uploaded_sha256": "e359bfa434ab1668857f7ecf3b421a931aa8494b4350d2bc3cd13da36dfe5fef",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S016/IZTECH_S016_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S016/IZTECH_S016_sleepdiary_20250616.csv",
+      "source_sha256": "1744043fb474fbd5189e3c67f37f2589affb3f43405ef4e2959029e47aab50ad",
+      "uploaded_sha256": "1744043fb474fbd5189e3c67f37f2589affb3f43405ef4e2959029e47aab50ad",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/IZTECH/IZTECH_S017/IZTECH_S017_sleepdiary_20250616.csv",
+      "uploaded": "데이터/원본/MeLiDos/IZTECH/IZTECH_S017/IZTECH_S017_sleepdiary_20250616.csv",
+      "source_sha256": "b1471dda7b74e5d874230f3281bf9fa3c008d4756dfd6408a6a9d83f4d26305d",
+      "uploaded_sha256": "b1471dda7b74e5d874230f3281bf9fa3c008d4756dfd6408a6a9d83f4d26305d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S001/KNUST_S001_sleepdiary_20241014.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S001/KNUST_S001_sleepdiary_20241014.csv",
+      "source_sha256": "6f06a77459d5be1cb59de5e00f4c3b4c42516a1ef61dbdc3397a36c50a7afe76",
+      "uploaded_sha256": "6f06a77459d5be1cb59de5e00f4c3b4c42516a1ef61dbdc3397a36c50a7afe76",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S002/KNUST_S002_sleepdiary_20241021.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S002/KNUST_S002_sleepdiary_20241021.csv",
+      "source_sha256": "445b61f8d2345f1dc78ccd3a5bda63bded2f5ef3a6fed69fed39ec9b05d96d2e",
+      "uploaded_sha256": "445b61f8d2345f1dc78ccd3a5bda63bded2f5ef3a6fed69fed39ec9b05d96d2e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S003/KNUST_S003_sleepdiary_20241028.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S003/KNUST_S003_sleepdiary_20241028.csv",
+      "source_sha256": "9f01e1cc2b597424c49cec036923f73219c49bbe97bb82bf7b474df8f7271bfb",
+      "uploaded_sha256": "9f01e1cc2b597424c49cec036923f73219c49bbe97bb82bf7b474df8f7271bfb",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S004/KNUST_S004_sleepdiary_20241104.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S004/KNUST_S004_sleepdiary_20241104.csv",
+      "source_sha256": "72e256fbb78b1384f0b530263687d52d0e6eed614f68042f6bc2d2eaea105d59",
+      "uploaded_sha256": "72e256fbb78b1384f0b530263687d52d0e6eed614f68042f6bc2d2eaea105d59",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S005/KNUST_S005_sleepdiary_20241111.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S005/KNUST_S005_sleepdiary_20241111.csv",
+      "source_sha256": "42e175f80d25a7f217b232110b463f214c8e00fa2155d25a36494e13970fe266",
+      "uploaded_sha256": "42e175f80d25a7f217b232110b463f214c8e00fa2155d25a36494e13970fe266",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S006/KNUST_S006_sleepdiary_20241118.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S006/KNUST_S006_sleepdiary_20241118.csv",
+      "source_sha256": "7cf6fe9cf44953db1e4bb0567c90166b675fd14cbd30fd8d39616ad145143d12",
+      "uploaded_sha256": "7cf6fe9cf44953db1e4bb0567c90166b675fd14cbd30fd8d39616ad145143d12",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S007/KNUST_S007_sleepdiary_20241125.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S007/KNUST_S007_sleepdiary_20241125.csv",
+      "source_sha256": "e607743903460c5d73811acb4b4535bf4b9605d1424549e794095f0188789d8a",
+      "uploaded_sha256": "e607743903460c5d73811acb4b4535bf4b9605d1424549e794095f0188789d8a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S008/KNUST_S008_sleepdairy_20241202.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S008/KNUST_S008_sleepdairy_20241202.csv",
+      "source_sha256": "1a907749bb8d0e36effe5ebf9db7196aa9bc33561cf4f6f01ec439a29bcc9ca0",
+      "uploaded_sha256": "1a907749bb8d0e36effe5ebf9db7196aa9bc33561cf4f6f01ec439a29bcc9ca0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S009/KNUST_S009_sleepdiary_20241209.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S009/KNUST_S009_sleepdiary_20241209.csv",
+      "source_sha256": "f349b1d13bc712bced5887bf3f493d638b35b9c682b6e9027731191a7bc7dacd",
+      "uploaded_sha256": "f349b1d13bc712bced5887bf3f493d638b35b9c682b6e9027731191a7bc7dacd",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S010/KNUST_S010_sleepdiary_20241216.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S010/KNUST_S010_sleepdiary_20241216.csv",
+      "source_sha256": "a7bbd6b4cad77d3b2da7eef279c130b2f5777386405747952add438d32089f4e",
+      "uploaded_sha256": "a7bbd6b4cad77d3b2da7eef279c130b2f5777386405747952add438d32089f4e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S011/KNUST_S011_sleepdiary_20241223.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S011/KNUST_S011_sleepdiary_20241223.csv",
+      "source_sha256": "e9cad73e3c1a0c5357c6218bb995c46cfb616ce1c90030e1dcdba4dbf5cfa334",
+      "uploaded_sha256": "e9cad73e3c1a0c5357c6218bb995c46cfb616ce1c90030e1dcdba4dbf5cfa334",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S012/KNUST_S012_sleepdiary_20250113.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S012/KNUST_S012_sleepdiary_20250113.csv",
+      "source_sha256": "17867b16e45b83a9487522f358fcc28cba04999c14d92a81d6846e80c77f0980",
+      "uploaded_sha256": "17867b16e45b83a9487522f358fcc28cba04999c14d92a81d6846e80c77f0980",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S013/KNUST_S013_sleepdiary_20250120.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S013/KNUST_S013_sleepdiary_20250120.csv",
+      "source_sha256": "a9f34c7243a0d31d206f10697a8063e32cf4c9a5074ac61a0bf73612107739c8",
+      "uploaded_sha256": "a9f34c7243a0d31d206f10697a8063e32cf4c9a5074ac61a0bf73612107739c8",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S014/KNUST_S014_sleepdiary_20250127.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S014/KNUST_S014_sleepdiary_20250127.csv",
+      "source_sha256": "25b0b60e4643c1b383dc3d7f80271187e6807db76d20bfe8f7d45560ee61fe1e",
+      "uploaded_sha256": "25b0b60e4643c1b383dc3d7f80271187e6807db76d20bfe8f7d45560ee61fe1e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/KNUST/KNUST_S015/KNUST_S015_sleepdiary_20250203.csv",
+      "uploaded": "데이터/원본/MeLiDos/KNUST/KNUST_S015/KNUST_S015_sleepdiary_20250203.csv",
+      "source_sha256": "e1fc405b7a17e0de6b9641711f285ed6288098cc2170a26abd9fc327ad8db06f",
+      "uploaded_sha256": "e1fc405b7a17e0de6b9641711f285ed6288098cc2170a26abd9fc327ad8db06f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/201/201_sleepdiary_all_20230821.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/201/201_sleepdiary_all_20230821.csv",
+      "source_sha256": "ce3a31cc20e6a34d576bf0bb9303b0e89706e3bdc3abf73e9a18c5680750cfef",
+      "uploaded_sha256": "ce3a31cc20e6a34d576bf0bb9303b0e89706e3bdc3abf73e9a18c5680750cfef",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/202/202_sleepdiary_all_20230821.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/202/202_sleepdiary_all_20230821.csv",
+      "source_sha256": "f28270238fe09fadef2293a31dc1024757ca30c5232ccdbd7795428327c68d62",
+      "uploaded_sha256": "f28270238fe09fadef2293a31dc1024757ca30c5232ccdbd7795428327c68d62",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/204/204_sleepdiary_all_20230821.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/204/204_sleepdiary_all_20230821.csv",
+      "source_sha256": "3adc7e94e5657634a3a0dd6f1be8990e8c9d746883665ca36e42a0b592f07759",
+      "uploaded_sha256": "3adc7e94e5657634a3a0dd6f1be8990e8c9d746883665ca36e42a0b592f07759",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/205/205_sleepdiary_all_20230904.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/205/205_sleepdiary_all_20230904.csv",
+      "source_sha256": "e9a255831e1e0912e7e9df04f9b33ca7cb58bb29c7d12d8931ddd0c36bd4a616",
+      "uploaded_sha256": "e9a255831e1e0912e7e9df04f9b33ca7cb58bb29c7d12d8931ddd0c36bd4a616",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/206/206_sleepdiary_all_20230904.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/206/206_sleepdiary_all_20230904.csv",
+      "source_sha256": "b057eb59be3e9c82b8888b74cddf16158d2382b01095ef0d5304b0bd3ea7dda2",
+      "uploaded_sha256": "b057eb59be3e9c82b8888b74cddf16158d2382b01095ef0d5304b0bd3ea7dda2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/208/208_sleepdiary_all_20230911.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/208/208_sleepdiary_all_20230911.csv",
+      "source_sha256": "a96376757393f216d1f22314c5fa71270108bcde894f81685e2c779a4e280407",
+      "uploaded_sha256": "a96376757393f216d1f22314c5fa71270108bcde894f81685e2c779a4e280407",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/209/209_sleepdiary_all_20230911.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/209/209_sleepdiary_all_20230911.csv",
+      "source_sha256": "654ffa994d5b0b7325eb8a3458f5b45c0b0b18c5e99479dc6db7f3a04b83e771",
+      "uploaded_sha256": "654ffa994d5b0b7325eb8a3458f5b45c0b0b18c5e99479dc6db7f3a04b83e771",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/210/210_sleepdiary_all_20230911.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/210/210_sleepdiary_all_20230911.csv",
+      "source_sha256": "f87f1bb016482e8552b20bfe011ce85f9cee1d6f086d112eada10b0d8f5f8b40",
+      "uploaded_sha256": "f87f1bb016482e8552b20bfe011ce85f9cee1d6f086d112eada10b0d8f5f8b40",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/212/212_sleepdiary_all_20230918.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/212/212_sleepdiary_all_20230918.csv",
+      "source_sha256": "c0b8c35c460c702598f2d76c881c98d6a27f6295bcd871bf854db19cd6bad9eb",
+      "uploaded_sha256": "c0b8c35c460c702598f2d76c881c98d6a27f6295bcd871bf854db19cd6bad9eb",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/213/213_sleepdiary_all_20230918.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/213/213_sleepdiary_all_20230918.csv",
+      "source_sha256": "fe119b161554bd9742bfa4227dbe6dc742e6f645cb77fa3704bf84fdb01969ba",
+      "uploaded_sha256": "fe119b161554bd9742bfa4227dbe6dc742e6f645cb77fa3704bf84fdb01969ba",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/214/214_sleepdiary_all_20231002.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/214/214_sleepdiary_all_20231002.csv",
+      "source_sha256": "3db8bcd64421d010d18a0e6e0bdf1778858d53c5232cb40513b2ea8db08772eb",
+      "uploaded_sha256": "3db8bcd64421d010d18a0e6e0bdf1778858d53c5232cb40513b2ea8db08772eb",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/215/215_sleepdiary_all_20231009.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/215/215_sleepdiary_all_20231009.csv",
+      "source_sha256": "62a5fab5f38ba925043110e85b057dafb22184fa2ded6aaa057f288dea517955",
+      "uploaded_sha256": "62a5fab5f38ba925043110e85b057dafb22184fa2ded6aaa057f288dea517955",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/216/216_sleepdiary_20231009.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/216/216_sleepdiary_20231009.csv",
+      "source_sha256": "4abb02919bcfb8a8089dd59e680a1a79f7392d4e1e2a1fdfda109f475e17c7d4",
+      "uploaded_sha256": "4abb02919bcfb8a8089dd59e680a1a79f7392d4e1e2a1fdfda109f475e17c7d4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/218/218_sleepdiary_20231023.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/218/218_sleepdiary_20231023.csv",
+      "source_sha256": "d88fcb87f99b94440974f6fd7015b2e52d8367dd067a917f98de8977baeaf7c3",
+      "uploaded_sha256": "d88fcb87f99b94440974f6fd7015b2e52d8367dd067a917f98de8977baeaf7c3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/219/219_sleepdiary_20231023.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/219/219_sleepdiary_20231023.csv",
+      "source_sha256": "f4d45d14cad6a6c0c376de2e7e51d1495846a0d3d501e505fdc11353116c1c20",
+      "uploaded_sha256": "f4d45d14cad6a6c0c376de2e7e51d1495846a0d3d501e505fdc11353116c1c20",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/221/221_sleepdiary_20231031.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/221/221_sleepdiary_20231031.csv",
+      "source_sha256": "8d2fc42f350c69480716f9fb4c8f9ae41c58d96f64089ceda6dc98c0baf9f01c",
+      "uploaded_sha256": "8d2fc42f350c69480716f9fb4c8f9ae41c58d96f64089ceda6dc98c0baf9f01c",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/222/222_sleepdiary_20231031.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/222/222_sleepdiary_20231031.csv",
+      "source_sha256": "222d978711aba833c8d42f6fd7b658a0071be63b9a895d783ff998a02c90c666",
+      "uploaded_sha256": "222d978711aba833c8d42f6fd7b658a0071be63b9a895d783ff998a02c90c666",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/223/223_sleepdiary_20231108.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/223/223_sleepdiary_20231108.csv",
+      "source_sha256": "5cfa3b33bff453bcce66025caf72f83ab51b21bc929c45a148b433963941c310",
+      "uploaded_sha256": "5cfa3b33bff453bcce66025caf72f83ab51b21bc929c45a148b433963941c310",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/224/224_sleepdiary_20231108.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/224/224_sleepdiary_20231108.csv",
+      "source_sha256": "733ffbdc7d92c38dd736a8b61fae2e9338cc4f9c4532aa8e03e499bf3c50d214",
+      "uploaded_sha256": "733ffbdc7d92c38dd736a8b61fae2e9338cc4f9c4532aa8e03e499bf3c50d214",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/225/225_sleepdiary_20230811.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/225/225_sleepdiary_20230811.csv",
+      "source_sha256": "af8a7f994c57a6db090276fbdda808a90101024c39bbb8633b5182ba59db509d",
+      "uploaded_sha256": "af8a7f994c57a6db090276fbdda808a90101024c39bbb8633b5182ba59db509d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/226/226_sleepdiary_20231108.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/226/226_sleepdiary_20231108.csv",
+      "source_sha256": "cc8bccbd707cf9488312721ee89515b708ea00ebbc6b685252ac54ff696574d3",
+      "uploaded_sha256": "cc8bccbd707cf9488312721ee89515b708ea00ebbc6b685252ac54ff696574d3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/227/227_sleepdiary_20231108.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/227/227_sleepdiary_20231108.csv",
+      "source_sha256": "4c143e5a05b40709d273f6d8962ca9195ef60557e06d58de8de41a2268e2afd2",
+      "uploaded_sha256": "4c143e5a05b40709d273f6d8962ca9195ef60557e06d58de8de41a2268e2afd2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/228/228_sleepdiary_20231113.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/228/228_sleepdiary_20231113.csv",
+      "source_sha256": "7684c7a2ad541c10ad18b32a00f6c5fdd2d7b10c9adc384b1f0d0a28a026be76",
+      "uploaded_sha256": "7684c7a2ad541c10ad18b32a00f6c5fdd2d7b10c9adc384b1f0d0a28a026be76",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/229/229_sleepdiary_20231113.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/229/229_sleepdiary_20231113.csv",
+      "source_sha256": "0d976dda8455c5467a94db16ccc80e2ca4e8adc1461ddb821053a22c39de349f",
+      "uploaded_sha256": "0d976dda8455c5467a94db16ccc80e2ca4e8adc1461ddb821053a22c39de349f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/230/230_sleepdiary_20231113.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/230/230_sleepdiary_20231113.csv",
+      "source_sha256": "942ee5e5632dd1b0d716497ded42bdb8f4051288d81015aa3a51bdeeeba78d3a",
+      "uploaded_sha256": "942ee5e5632dd1b0d716497ded42bdb8f4051288d81015aa3a51bdeeeba78d3a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/MPI/231/231_sleepdiary_20231113.csv",
+      "uploaded": "데이터/원본/MeLiDos/MPI/231/231_sleepdiary_20231113.csv",
+      "source_sha256": "b263425714811c7cf89204742bbac91737934f8b56f71338a57d197fa8281369",
+      "uploaded_sha256": "b263425714811c7cf89204742bbac91737934f8b56f71338a57d197fa8281369",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S001/RISE_S001_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S001/RISE_S001_Sleepdiary_2025.csv",
+      "source_sha256": "4823c9c2bf1519d2c34884530160687b78d726c58af31dbafcb7d27648fb6b40",
+      "uploaded_sha256": "4823c9c2bf1519d2c34884530160687b78d726c58af31dbafcb7d27648fb6b40",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S002/RISE_S002_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S002/RISE_S002_Sleepdiary_2025.csv",
+      "source_sha256": "4cec55a8d04fb455d787e9a5c1d6ddc275967470c6cb3c15d5d421f09542c274",
+      "uploaded_sha256": "4cec55a8d04fb455d787e9a5c1d6ddc275967470c6cb3c15d5d421f09542c274",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S003/RISE_S003_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S003/RISE_S003_Sleepdiary_2025.csv",
+      "source_sha256": "8b6dfe3e4b8f2fe239c7af6bcdebd6e1330ecbe079e646ca20669fb9fc0294ff",
+      "uploaded_sha256": "8b6dfe3e4b8f2fe239c7af6bcdebd6e1330ecbe079e646ca20669fb9fc0294ff",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S004/RISE_S004_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S004/RISE_S004_Sleepdiary_2025.csv",
+      "source_sha256": "554bda39f69946796650cdda9776f58dead2278637c08809e69d4496600568e4",
+      "uploaded_sha256": "554bda39f69946796650cdda9776f58dead2278637c08809e69d4496600568e4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S005/RISE_S005_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S005/RISE_S005_Sleepdiary_2025.csv",
+      "source_sha256": "a38291f84b6412b0ce79ab5ec4c7b17d2ff1df4ab89f3705a3b5595257e8f14f",
+      "uploaded_sha256": "a38291f84b6412b0ce79ab5ec4c7b17d2ff1df4ab89f3705a3b5595257e8f14f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S006/RISE_S006_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S006/RISE_S006_Sleepdiary_2025.csv",
+      "source_sha256": "38f648e2bf1357bf1833801fdcc7169a22db2e9ea829e5f40742ae3ef8a9aa00",
+      "uploaded_sha256": "38f648e2bf1357bf1833801fdcc7169a22db2e9ea829e5f40742ae3ef8a9aa00",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S007/RISE_S007_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S007/RISE_S007_Sleepdiary_2025.csv",
+      "source_sha256": "c1c7b9163e0f0e6f7b3d21e4e5ad97e94054a3493c7b657ecbaae8c186fa3c11",
+      "uploaded_sha256": "c1c7b9163e0f0e6f7b3d21e4e5ad97e94054a3493c7b657ecbaae8c186fa3c11",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S008/RISE_S008_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S008/RISE_S008_Sleepdiary_2025.csv",
+      "source_sha256": "b94a87401bfbd10808c5237795f20966454346652f9fa33c8d6270497aad2c17",
+      "uploaded_sha256": "b94a87401bfbd10808c5237795f20966454346652f9fa33c8d6270497aad2c17",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S009/RISE_S009_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S009/RISE_S009_Sleepdiary_2025.csv",
+      "source_sha256": "45d6cedc32463934fd5846f82d6df9f257bc0ff4fa7005189e54ae505930bc27",
+      "uploaded_sha256": "45d6cedc32463934fd5846f82d6df9f257bc0ff4fa7005189e54ae505930bc27",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S010/RISE_S010_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S010/RISE_S010_Sleepdiary_2025.csv",
+      "source_sha256": "763f5eb259fbe2714b18686022baee041635e375db9af481ba3c3a8ab6774757",
+      "uploaded_sha256": "763f5eb259fbe2714b18686022baee041635e375db9af481ba3c3a8ab6774757",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S011/RISE_S011_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S011/RISE_S011_Sleepdiary_2025.csv",
+      "source_sha256": "24e3755fa402b283bceb8620ad09611d932ea79d5a4e4f0b9075d3b1ff88b16e",
+      "uploaded_sha256": "24e3755fa402b283bceb8620ad09611d932ea79d5a4e4f0b9075d3b1ff88b16e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S012/RISE_S012_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S012/RISE_S012_Sleepdiary_2025.csv",
+      "source_sha256": "88a91644bf23922048bb6d94c87220da67b2c4dece0a17b1331bfc23d8e3f057",
+      "uploaded_sha256": "88a91644bf23922048bb6d94c87220da67b2c4dece0a17b1331bfc23d8e3f057",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S013/RISE_S013_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S013/RISE_S013_Sleepdiary_2025.csv",
+      "source_sha256": "a9dc16c93be2841d191dc8ffeafd3c63625a4087f696106c69a5737fb1f325d3",
+      "uploaded_sha256": "a9dc16c93be2841d191dc8ffeafd3c63625a4087f696106c69a5737fb1f325d3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S014/RISE_S014_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S014/RISE_S014_Sleepdiary_2025.csv",
+      "source_sha256": "eee25fe19cb90c350b5d2a359c534285e31bfb308910732755d04adac228cc80",
+      "uploaded_sha256": "eee25fe19cb90c350b5d2a359c534285e31bfb308910732755d04adac228cc80",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S015/RISE_S015_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S015/RISE_S015_Sleepdiary_2025.csv",
+      "source_sha256": "b1ae9553969fe1a42b02be3898a655e8452d9540a88a272876221dfddaaf3634",
+      "uploaded_sha256": "b1ae9553969fe1a42b02be3898a655e8452d9540a88a272876221dfddaaf3634",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S016/RISE_S016_Sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S016/RISE_S016_Sleepdiary_2025.csv",
+      "source_sha256": "b799007fa21b5379572bd0eee4da1160455b2f4300fdb80efcc9b7956cbca862",
+      "uploaded_sha256": "b799007fa21b5379572bd0eee4da1160455b2f4300fdb80efcc9b7956cbca862",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/RISE/RISE_S017/RISE_S017_sleepdiary_2025.csv",
+      "uploaded": "데이터/원본/MeLiDos/RISE/RISE_S017/RISE_S017_sleepdiary_2025.csv",
+      "source_sha256": "3dface75ac2f99a00b574d12a5eb2366a5f836fa10dda3d5efc4b244c626c618",
+      "uploaded_sha256": "3dface75ac2f99a00b574d12a5eb2366a5f836fa10dda3d5efc4b244c626c618",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S001/THUAS_S001_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S001/THUAS_S001_sleepdiary_20251106.csv",
+      "source_sha256": "bd8996cb50947b7b26ce73c09f6a15931596c462c301ed26f0cb47f9606d43d5",
+      "uploaded_sha256": "bd8996cb50947b7b26ce73c09f6a15931596c462c301ed26f0cb47f9606d43d5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S002/THUAS_S002_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S002/THUAS_S002_sleepdiary_20251106.csv",
+      "source_sha256": "9dca5cba762c3c66f12a29dcba2a84be57a47b5ddd0c0b0c7281c8927d0b62d6",
+      "uploaded_sha256": "9dca5cba762c3c66f12a29dcba2a84be57a47b5ddd0c0b0c7281c8927d0b62d6",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S003/THUAS_S003_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S003/THUAS_S003_sleepdiary_20251106.csv",
+      "source_sha256": "79792a8f56c190811e9c4ca118e4dc1abe5bc2bf66da2b559228cc67500499e5",
+      "uploaded_sha256": "79792a8f56c190811e9c4ca118e4dc1abe5bc2bf66da2b559228cc67500499e5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S005/THUAS_S005_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S005/THUAS_S005_sleepdiary_20251106.csv",
+      "source_sha256": "920bced66f1638cbd33836456a087a05566c0b68495c777519eda5dd013666ca",
+      "uploaded_sha256": "920bced66f1638cbd33836456a087a05566c0b68495c777519eda5dd013666ca",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S006/THUAS_S006_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S006/THUAS_S006_sleepdiary_20251106.csv",
+      "source_sha256": "8ee01f0691a333007a68a797af693e360fd580c6e966949eb6c155671b752595",
+      "uploaded_sha256": "8ee01f0691a333007a68a797af693e360fd580c6e966949eb6c155671b752595",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S007/THUAS_S007_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S007/THUAS_S007_sleepdiary_20251106.csv",
+      "source_sha256": "4e26237022ef4332e064d444bf09802d18bd70381bbd6d9ba41f6908f3af0bfb",
+      "uploaded_sha256": "4e26237022ef4332e064d444bf09802d18bd70381bbd6d9ba41f6908f3af0bfb",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S010/THUAS_S010_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S010/THUAS_S010_sleepdiary_20251106.csv",
+      "source_sha256": "f684145b3d4380bb308b6a011cc7cf479be7fbc5059c9fc34cb994618225ab5d",
+      "uploaded_sha256": "f684145b3d4380bb308b6a011cc7cf479be7fbc5059c9fc34cb994618225ab5d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S011/THUAS_S011_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S011/THUAS_S011_sleepdiary_20251106.csv",
+      "source_sha256": "0419c355dcba574f68ec65add8835886e210b7444d224ffe933c93bb088ffeb9",
+      "uploaded_sha256": "0419c355dcba574f68ec65add8835886e210b7444d224ffe933c93bb088ffeb9",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S014/THUAS_S014_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S014/THUAS_S014_sleepdiary_20251106.csv",
+      "source_sha256": "105a91efe113b0bf7a9f44ab2c6373287db07c3ecddaadf030411452e111938e",
+      "uploaded_sha256": "105a91efe113b0bf7a9f44ab2c6373287db07c3ecddaadf030411452e111938e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S015/THUAS_S015_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S015/THUAS_S015_sleepdiary_20251106.csv",
+      "source_sha256": "f85aea8baddadf8a612293bbdaeb1a5e22ab40d290f33fbce0c2dbae340fbf57",
+      "uploaded_sha256": "f85aea8baddadf8a612293bbdaeb1a5e22ab40d290f33fbce0c2dbae340fbf57",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S016/THUAS_S016_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S016/THUAS_S016_sleepdiary_20251106.csv",
+      "source_sha256": "75e4af4578c592cd2b0309ab8306c3d7a4e669c6c676fe669f7a4a7880ad2d41",
+      "uploaded_sha256": "75e4af4578c592cd2b0309ab8306c3d7a4e669c6c676fe669f7a4a7880ad2d41",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S017/THUAS_S017_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S017/THUAS_S017_sleepdiary_20251106.csv",
+      "source_sha256": "7f01efd4de208330754d8700bde8f7323cc075f06ebc34c14985c8e26499e38f",
+      "uploaded_sha256": "7f01efd4de208330754d8700bde8f7323cc075f06ebc34c14985c8e26499e38f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S018/THUAS_S018_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S018/THUAS_S018_sleepdiary_20251106.csv",
+      "source_sha256": "2ebabb9f1d8835336e718ff417621b2d21898c9f4622bf2782ec1d096553cc7a",
+      "uploaded_sha256": "2ebabb9f1d8835336e718ff417621b2d21898c9f4622bf2782ec1d096553cc7a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S019/THUAS_S019_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S019/THUAS_S019_sleepdiary_20251106.csv",
+      "source_sha256": "c4d9517b25c204113d3b1d6853319c7e9d3a57a2c7c2eebd1f9d8fc53e4d8888",
+      "uploaded_sha256": "c4d9517b25c204113d3b1d6853319c7e9d3a57a2c7c2eebd1f9d8fc53e4d8888",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/THUAS/THUAS_S020/THUAS_S020_sleepdiary_20251106.csv",
+      "uploaded": "데이터/원본/MeLiDos/THUAS/THUAS_S020/THUAS_S020_sleepdiary_20251106.csv",
+      "source_sha256": "3aeb3a0f7e41efc9771109c226802f1867cb40f44872e8d8044f1c8ce65662d4",
+      "uploaded_sha256": "3aeb3a0f7e41efc9771109c226802f1867cb40f44872e8d8044f1c8ce65662d4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 001/001_MorningSleepDiary_DATA_2024-05-27_1400.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 001/001_MorningSleepDiary_DATA_2024-05-27_1400.csv",
+      "source_sha256": "864046e1fde6e324f2115787b56b5cdbe747dca02005ee6c18c15fcc1403b4a0",
+      "uploaded_sha256": "864046e1fde6e324f2115787b56b5cdbe747dca02005ee6c18c15fcc1403b4a0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 002/002_MorningSleepDiary-002morningsleep_DATA_2024-06-03_1224.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 002/002_MorningSleepDiary-002morningsleep_DATA_2024-06-03_1224.csv",
+      "source_sha256": "8298398dcd347931fa45bcdddb2c26413db7da222aca4685d513ccd9cb188cd0",
+      "uploaded_sha256": "8298398dcd347931fa45bcdddb2c26413db7da222aca4685d513ccd9cb188cd0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 003/003_MorningSleepDiary-003morningsleep_DATA_2024-06-10_0915.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 003/003_MorningSleepDiary-003morningsleep_DATA_2024-06-10_0915.csv",
+      "source_sha256": "0daf9e2d479d22e6d2521b5b778cca55c2a0ef7145b4016ad1eba7fc80d7a63b",
+      "uploaded_sha256": "0daf9e2d479d22e6d2521b5b778cca55c2a0ef7145b4016ad1eba7fc80d7a63b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 004/004_MorningSleepDiary-004morningsleep_DATA_2024-06-17_1341.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 004/004_MorningSleepDiary-004morningsleep_DATA_2024-06-17_1341.csv",
+      "source_sha256": "a03f4164fc22f2c2391ce0ac2031b935e7fa0daa21d46d2d9aad58e38947552a",
+      "uploaded_sha256": "a03f4164fc22f2c2391ce0ac2031b935e7fa0daa21d46d2d9aad58e38947552a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 005/005_MorningSleepDiary-005morningsleep_DATA_2024-06-24_0950.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 005/005_MorningSleepDiary-005morningsleep_DATA_2024-06-24_0950.csv",
+      "source_sha256": "8e1f055577ce47c2e3f0d176a2d5e71cda12dfe29cbedd211ec544dee3f2357f",
+      "uploaded_sha256": "8e1f055577ce47c2e3f0d176a2d5e71cda12dfe29cbedd211ec544dee3f2357f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 006/006_MorningSleepDiary-006morningsleep_DATA_2024-07-01_0832.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 006/006_MorningSleepDiary-006morningsleep_DATA_2024-07-01_0832.csv",
+      "source_sha256": "0ec518fc43cd413a47631848816593a65bc5a37282551913a66b3a86aa101cf5",
+      "uploaded_sha256": "0ec518fc43cd413a47631848816593a65bc5a37282551913a66b3a86aa101cf5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 007/007_MorningSleepDiary-007morningsleep_DATA_2024-07-08_1007.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 007/007_MorningSleepDiary-007morningsleep_DATA_2024-07-08_1007.csv",
+      "source_sha256": "75044e0a73c2a0571d64877725b4c990ecd63310b24050151c5d61332aa9598f",
+      "uploaded_sha256": "75044e0a73c2a0571d64877725b4c990ecd63310b24050151c5d61332aa9598f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 008/008_MorningSleepDiary-008morningsleep_DATA_2024-07-15_1324.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 008/008_MorningSleepDiary-008morningsleep_DATA_2024-07-15_1324.csv",
+      "source_sha256": "534cb1abe7b907587b57e996aca9367ba882ea6c8a702e24a034dacdbf0c01f9",
+      "uploaded_sha256": "534cb1abe7b907587b57e996aca9367ba882ea6c8a702e24a034dacdbf0c01f9",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 009/009_MorningSleepDiary-009morningsleep_DATA_2024-07-22_1150.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 009/009_MorningSleepDiary-009morningsleep_DATA_2024-07-22_1150.csv",
+      "source_sha256": "0b17baf3ba2c1131bbcbc41bd41bfccb74b8cba98a34f0e9d57545178d69478b",
+      "uploaded_sha256": "0b17baf3ba2c1131bbcbc41bd41bfccb74b8cba98a34f0e9d57545178d69478b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/TUM/ID 010/010_MorningSleepDiary-010morningsleep_DATA_2024-07-29_1028.csv",
+      "uploaded": "데이터/원본/MeLiDos/TUM/ID 010/010_MorningSleepDiary-010morningsleep_DATA_2024-07-29_1028.csv",
+      "source_sha256": "8d18b393baac469f67050362e1712f0e6c1775e0c06f94e1455b8ca241a08d55",
+      "uploaded_sha256": "8d18b393baac469f67050362e1712f0e6c1775e0c06f94e1455b8ca241a08d55",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S001/UCR_S001_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S001/UCR_S001_SLEEPDIARY_202509.csv",
+      "source_sha256": "a897b605c4ed067b431c81463e24542d97372eac6d7c5dc391f8d5e004d1909b",
+      "uploaded_sha256": "a897b605c4ed067b431c81463e24542d97372eac6d7c5dc391f8d5e004d1909b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S002/UCR_S002_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S002/UCR_S002_SLEEPDIARY_202509.csv",
+      "source_sha256": "fef22f61cea36d6022e907a7de4e9fa21a4f060a16786438e6117fb0330a8be9",
+      "uploaded_sha256": "fef22f61cea36d6022e907a7de4e9fa21a4f060a16786438e6117fb0330a8be9",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S003/UCR_S003_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S003/UCR_S003_SLEEPDIARY_202509.csv",
+      "source_sha256": "aa86ae08cc2b0ca30cbef5a178449200657f76a0f5cc1eec86597aca60baf546",
+      "uploaded_sha256": "aa86ae08cc2b0ca30cbef5a178449200657f76a0f5cc1eec86597aca60baf546",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S004/UCR_S004_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S004/UCR_S004_SLEEPDIARY_202509.csv",
+      "source_sha256": "8072364ac7c73d7f350cf8006a551ef7ac691dc639e4c5edc903a8a3b14d04b0",
+      "uploaded_sha256": "8072364ac7c73d7f350cf8006a551ef7ac691dc639e4c5edc903a8a3b14d04b0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S005/UCR_S005_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S005/UCR_S005_SLEEPDIARY_202509.csv",
+      "source_sha256": "2956bbcd2e01faa7c3a7dd244328e4513447a289e92b39a5ce901ac830fb73b7",
+      "uploaded_sha256": "2956bbcd2e01faa7c3a7dd244328e4513447a289e92b39a5ce901ac830fb73b7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S006/UCR_S006_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S006/UCR_S006_SLEEPDIARY_202509.csv",
+      "source_sha256": "7838dc2fd6db113d46ab6f61b41672b349eeafa9e76368409aa8c8f353bd08fc",
+      "uploaded_sha256": "7838dc2fd6db113d46ab6f61b41672b349eeafa9e76368409aa8c8f353bd08fc",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S007/UCR_S007_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S007/UCR_S007_SLEEPDIARY_202509.csv",
+      "source_sha256": "a3f77997f3715e0c5a7d91a8fa4f823ab8bd8849a8a45846e78a7d74168bbac4",
+      "uploaded_sha256": "a3f77997f3715e0c5a7d91a8fa4f823ab8bd8849a8a45846e78a7d74168bbac4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S008/UCR_S008_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S008/UCR_S008_SLEEPDIARY_202509.csv",
+      "source_sha256": "195f7b05a7d7c581df6313590f4e818622e87558a8d166042f9e73d1a920bb71",
+      "uploaded_sha256": "195f7b05a7d7c581df6313590f4e818622e87558a8d166042f9e73d1a920bb71",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S009/UCR_S009_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S009/UCR_S009_SLEEPDIARY_202509.csv",
+      "source_sha256": "470b6d97d7e260f1d95200658fe28f64413196b4dffdec0f40ae8f2340e3a371",
+      "uploaded_sha256": "470b6d97d7e260f1d95200658fe28f64413196b4dffdec0f40ae8f2340e3a371",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S010/UCR_S010_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S010/UCR_S010_SLEEPDIARY_202509.csv",
+      "source_sha256": "a88f658efa21bde71b9287d2da9db8d7e33cd50a5f9eb2edca25d638322377ec",
+      "uploaded_sha256": "a88f658efa21bde71b9287d2da9db8d7e33cd50a5f9eb2edca25d638322377ec",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S011/UCR_S011_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S011/UCR_S011_SLEEPDIARY_202509.csv",
+      "source_sha256": "c399c773bb7fe67e7f834e4fe74ff6df65f6dda980ba0b5266263063b755b831",
+      "uploaded_sha256": "c399c773bb7fe67e7f834e4fe74ff6df65f6dda980ba0b5266263063b755b831",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S012/UCR_S012_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S012/UCR_S012_SLEEPDIARY_202509.csv",
+      "source_sha256": "cb47cebf663ea1888fd7380f50b727f8a791d16bcce3174a23b7e37a494af111",
+      "uploaded_sha256": "cb47cebf663ea1888fd7380f50b727f8a791d16bcce3174a23b7e37a494af111",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S013/UCR_S013_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S013/UCR_S013_SLEEPDIARY_202509.csv",
+      "source_sha256": "5e242f1575b226278df695e8ef76bcefdb3f8768602e73dfece131ce7c76cfe2",
+      "uploaded_sha256": "5e242f1575b226278df695e8ef76bcefdb3f8768602e73dfece131ce7c76cfe2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S014/UCR_S014_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S014/UCR_S014_SLEEPDIARY_202509.csv",
+      "source_sha256": "da36e48c6a7eadb1add33dd97a7127f7140294ed96f3e4220e637a85fc1cdf75",
+      "uploaded_sha256": "da36e48c6a7eadb1add33dd97a7127f7140294ed96f3e4220e637a85fc1cdf75",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S015/UCR_S015_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S015/UCR_S015_SLEEPDIARY_202509.csv",
+      "source_sha256": "84b86b0750c7620b46372c555cf1d3310fbe1fb24d13d4fe949521c0fe426939",
+      "uploaded_sha256": "84b86b0750c7620b46372c555cf1d3310fbe1fb24d13d4fe949521c0fe426939",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S016/UCR_S016_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S016/UCR_S016_SLEEPDIARY_202509.csv",
+      "source_sha256": "d32f6da1330d333b26903358525a21574515ec2997c5eaa086ab9b807d149261",
+      "uploaded_sha256": "d32f6da1330d333b26903358525a21574515ec2997c5eaa086ab9b807d149261",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S017/UCR_S017_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S017/UCR_S017_SLEEPDIARY_202509.csv",
+      "source_sha256": "981ada9176a875c4065396a5a4ba4da1641400bda6711f24379661cfcf26af32",
+      "uploaded_sha256": "981ada9176a875c4065396a5a4ba4da1641400bda6711f24379661cfcf26af32",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S018/UCR_S018_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S018/UCR_S018_SLEEPDIARY_202509.csv",
+      "source_sha256": "d96dd464fc6f37cea3b09b88b4719f24b4038f08279d775dc80cd63cf6f36db1",
+      "uploaded_sha256": "d96dd464fc6f37cea3b09b88b4719f24b4038f08279d775dc80cd63cf6f36db1",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S019/UCR_S019_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S019/UCR_S019_SLEEPDIARY_202509.csv",
+      "source_sha256": "e8688ff7c3645a585977fd84d9b6dabe6435d3c51a484048ef478554bc03c831",
+      "uploaded_sha256": "e8688ff7c3645a585977fd84d9b6dabe6435d3c51a484048ef478554bc03c831",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S020/UCR_S020_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S020/UCR_S020_SLEEPDIARY_202509.csv",
+      "source_sha256": "b86dcf1aafe25c54ec11deb8b51979bbc911ac256c2a2332a03368ac559a8dee",
+      "uploaded_sha256": "b86dcf1aafe25c54ec11deb8b51979bbc911ac256c2a2332a03368ac559a8dee",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S021/UCR_S021_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S021/UCR_S021_SLEEPDIARY_202509.csv",
+      "source_sha256": "3711d455e1e19b5e3a1f57674a80a1ba020b30b23c6eff819e43525e47aab6a5",
+      "uploaded_sha256": "3711d455e1e19b5e3a1f57674a80a1ba020b30b23c6eff819e43525e47aab6a5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S022/UCR_S022_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S022/UCR_S022_SLEEPDIARY_202509.csv",
+      "source_sha256": "212bd2814cebd1387b56a792e3d2d0965727dcb3a9092348f30e7d0791f0445b",
+      "uploaded_sha256": "212bd2814cebd1387b56a792e3d2d0965727dcb3a9092348f30e7d0791f0445b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S023/UCR_S023_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S023/UCR_S023_SLEEPDIARY_202509.csv",
+      "source_sha256": "9d6c33287ec7c07e2c71bc6ef0d01e002a983881d2d9db61725ab32820938762",
+      "uploaded_sha256": "9d6c33287ec7c07e2c71bc6ef0d01e002a983881d2d9db61725ab32820938762",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S025/UCR_S025_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S025/UCR_S025_SLEEPDIARY_202509.csv",
+      "source_sha256": "80c3ebc37f9d13b556ed2312c3a4fda7cf3dde7925231651ce5094d882a24ea7",
+      "uploaded_sha256": "80c3ebc37f9d13b556ed2312c3a4fda7cf3dde7925231651ce5094d882a24ea7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S026/UCR_S026_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S026/UCR_S026_SLEEPDIARY_202509.csv",
+      "source_sha256": "eab20fd2720679c94a73ebe38f5763f7371188227e15825b26932a1e244404d2",
+      "uploaded_sha256": "eab20fd2720679c94a73ebe38f5763f7371188227e15825b26932a1e244404d2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S027/UCR_S027_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S027/UCR_S027_SLEEPDIARY_202509.csv",
+      "source_sha256": "7c8086a26300ce514db7d7e7c72983a1fb4f2bbc942adbecb1e0d1df74cf9d3c",
+      "uploaded_sha256": "7c8086a26300ce514db7d7e7c72983a1fb4f2bbc942adbecb1e0d1df74cf9d3c",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S028/UCR_S028_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S028/UCR_S028_SLEEPDIARY_202509.csv",
+      "source_sha256": "a530c815575a763040b1c2a64e1981a1513c826556d10d795b8656789ebc4fca",
+      "uploaded_sha256": "a530c815575a763040b1c2a64e1981a1513c826556d10d795b8656789ebc4fca",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S029/UCR_S029_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S029/UCR_S029_SLEEPDIARY_202509.csv",
+      "source_sha256": "18bcf6a7dc0db2ed8a9591bf4833f3429a7850beaaa8bac4fe75ceb4fc36278a",
+      "uploaded_sha256": "18bcf6a7dc0db2ed8a9591bf4833f3429a7850beaaa8bac4fe75ceb4fc36278a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S030/UCR_S030_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S030/UCR_S030_SLEEPDIARY_202509.csv",
+      "source_sha256": "03e8a44c1ab43d23507a59ce9aa7c54ecb7571144eedc7c401db0289ac8de882",
+      "uploaded_sha256": "03e8a44c1ab43d23507a59ce9aa7c54ecb7571144eedc7c401db0289ac8de882",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S031/UCR_S031_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S031/UCR_S031_SLEEPDIARY_202509.csv",
+      "source_sha256": "c00403f35117eba4308b08c8a3159414527c5347d27567d1f5cad08aa0e49d98",
+      "uploaded_sha256": "c00403f35117eba4308b08c8a3159414527c5347d27567d1f5cad08aa0e49d98",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S032/UCR_S032_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S032/UCR_S032_SLEEPDIARY_202509.csv",
+      "source_sha256": "808c0bb16ef151bdb5c572da0f529211d22c3af6fe7a2c7c6a77bde691a8edc1",
+      "uploaded_sha256": "808c0bb16ef151bdb5c572da0f529211d22c3af6fe7a2c7c6a77bde691a8edc1",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S033/UCR_S033_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S033/UCR_S033_SLEEPDIARY_202509.csv",
+      "source_sha256": "783e6b805bb1843b8334058dbef7e62f7ee72383c29bb59c558f87733b24c831",
+      "uploaded_sha256": "783e6b805bb1843b8334058dbef7e62f7ee72383c29bb59c558f87733b24c831",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S034/UCR_S034_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S034/UCR_S034_SLEEPDIARY_202509.csv",
+      "source_sha256": "50d634bf90efa53f823d70f49574c71974cf482be9b96906eb8d38489dec56a7",
+      "uploaded_sha256": "50d634bf90efa53f823d70f49574c71974cf482be9b96906eb8d38489dec56a7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S035/UCR_S035_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S035/UCR_S035_SLEEPDIARY_202509.csv",
+      "source_sha256": "eb9821769520848ba92adec783e28ea377f6554de3b8ad4153a81dd524695fd2",
+      "uploaded_sha256": "eb9821769520848ba92adec783e28ea377f6554de3b8ad4153a81dd524695fd2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S036/UCR_S036_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S036/UCR_S036_SLEEPDIARY_202509.csv",
+      "source_sha256": "7d9ac28621782b78e1dd72020f0694b926b6afcdf41b70f0e6628e167e5af888",
+      "uploaded_sha256": "7d9ac28621782b78e1dd72020f0694b926b6afcdf41b70f0e6628e167e5af888",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S037/UCR_S037_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S037/UCR_S037_SLEEPDIARY_202509.csv",
+      "source_sha256": "6cbb5fd37775bc0181a5ab0f9df7d6f82b7d5b955927266005077ca5c499324c",
+      "uploaded_sha256": "6cbb5fd37775bc0181a5ab0f9df7d6f82b7d5b955927266005077ca5c499324c",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S038/UCR_S038_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S038/UCR_S038_SLEEPDIARY_202509.csv",
+      "source_sha256": "17770f1da6e63dfaed3b2b77d176bf221cdbaf6a54dd6b0a4ca2f4061eb08b3e",
+      "uploaded_sha256": "17770f1da6e63dfaed3b2b77d176bf221cdbaf6a54dd6b0a4ca2f4061eb08b3e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S039/UCR_S039_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S039/UCR_S039_SLEEPDIARY_202509.csv",
+      "source_sha256": "bc338bdce482d70e9e675be232c4c33f4b91d42f3b2c62a82013e838e76ce309",
+      "uploaded_sha256": "bc338bdce482d70e9e675be232c4c33f4b91d42f3b2c62a82013e838e76ce309",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/raw/MeLiDos/UCR/UCR_S040/UCR_S040_SLEEPDIARY_202509.csv",
+      "uploaded": "데이터/원본/MeLiDos/UCR/UCR_S040/UCR_S040_SLEEPDIARY_202509.csv",
+      "source_sha256": "de1077acf9361e8b14d37f913c5601e32705f271f2440817032929fb9f5ebb52",
+      "uploaded_sha256": "de1077acf9361e8b14d37f913c5601e32705f271f2440817032929fb9f5ebb52",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/split_info.json",
+      "uploaded": "데이터/분할/split_info.json",
+      "source_sha256": "d5eeb455314ae7a9f3252cbe491b5aae1719c5a1479b2dbf50eb65d70814b729",
+      "uploaded_sha256": "d5eeb455314ae7a9f3252cbe491b5aae1719c5a1479b2dbf50eb65d70814b729",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/test_korea.csv",
+      "uploaded": "데이터/분할/test_korea.csv",
+      "source_sha256": "90801f5c2901553c31c87f6130d2b394b7a3269d97ee34e1054ed6100b64998e",
+      "uploaded_sha256": "90801f5c2901553c31c87f6130d2b394b7a3269d97ee34e1054ed6100b64998e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/test_melidos.csv",
+      "uploaded": "데이터/분할/test_melidos.csv",
+      "source_sha256": "2e9ae7cc8bd08355e4038ef87f111977cf1551d1de3876dfa71731cb2b234e24",
+      "uploaded_sha256": "2e9ae7cc8bd08355e4038ef87f111977cf1551d1de3876dfa71731cb2b234e24",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/train_fold_1.csv",
+      "uploaded": "데이터/분할/train_fold_1.csv",
+      "source_sha256": "2ba164ebd88dda6c3e1399ab9a91873c73f36018e5e64a9d59de2c247e3fc323",
+      "uploaded_sha256": "2ba164ebd88dda6c3e1399ab9a91873c73f36018e5e64a9d59de2c247e3fc323",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/train_fold_2.csv",
+      "uploaded": "데이터/분할/train_fold_2.csv",
+      "source_sha256": "4e59aff0f1703ca7299523618250aba1d4b0fa5cbed2e163fcb5679151ab47c3",
+      "uploaded_sha256": "4e59aff0f1703ca7299523618250aba1d4b0fa5cbed2e163fcb5679151ab47c3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/train_fold_3.csv",
+      "uploaded": "데이터/분할/train_fold_3.csv",
+      "source_sha256": "e37ee54059a0106cd3b72a147c9e1b6aef5b2ac3c9683886b7c5803e62bf6664",
+      "uploaded_sha256": "e37ee54059a0106cd3b72a147c9e1b6aef5b2ac3c9683886b7c5803e62bf6664",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/train_fold_4.csv",
+      "uploaded": "데이터/분할/train_fold_4.csv",
+      "source_sha256": "ddc436b5d62a526d2d81ff700221a01343c82c50e8bbea6f8223f6dcb40cb5a5",
+      "uploaded_sha256": "ddc436b5d62a526d2d81ff700221a01343c82c50e8bbea6f8223f6dcb40cb5a5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/train_fold_5.csv",
+      "uploaded": "데이터/분할/train_fold_5.csv",
+      "source_sha256": "3d27c087d8ad4cbb866b56b7b0e76db56c052b8af169cd5a2d4a9ea934416244",
+      "uploaded_sha256": "3d27c087d8ad4cbb866b56b7b0e76db56c052b8af169cd5a2d4a9ea934416244",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/train_melidos.csv",
+      "uploaded": "데이터/분할/train_melidos.csv",
+      "source_sha256": "87c1a52408a69d817ababe3e561b7320e696de6bc12191dff21c96649add7d71",
+      "uploaded_sha256": "87c1a52408a69d817ababe3e561b7320e696de6bc12191dff21c96649add7d71",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/validation_fold_1.csv",
+      "uploaded": "데이터/분할/validation_fold_1.csv",
+      "source_sha256": "b8d1783ba09b9e80743bad4e925d78f23b6ec7bd0bcd2bb657de4d1d8ca86609",
+      "uploaded_sha256": "b8d1783ba09b9e80743bad4e925d78f23b6ec7bd0bcd2bb657de4d1d8ca86609",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/validation_fold_2.csv",
+      "uploaded": "데이터/분할/validation_fold_2.csv",
+      "source_sha256": "aeeadd36e1286c8ea7d7804ed80bf6c7f03bbf46bf5971d6833dfa7a401d7b30",
+      "uploaded_sha256": "aeeadd36e1286c8ea7d7804ed80bf6c7f03bbf46bf5971d6833dfa7a401d7b30",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/validation_fold_3.csv",
+      "uploaded": "데이터/분할/validation_fold_3.csv",
+      "source_sha256": "6565c2c7af2845caeacabc67a96affac149d5cdfe7d385c2f4cb1fdfb7fe27fe",
+      "uploaded_sha256": "6565c2c7af2845caeacabc67a96affac149d5cdfe7d385c2f4cb1fdfb7fe27fe",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/validation_fold_4.csv",
+      "uploaded": "데이터/분할/validation_fold_4.csv",
+      "source_sha256": "0048c41b52f17c5b8bd9b0f73ee1589f5032dc8d14296fd17f099e8506601022",
+      "uploaded_sha256": "0048c41b52f17c5b8bd9b0f73ee1589f5032dc8d14296fd17f099e8506601022",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/validation_fold_5.csv",
+      "uploaded": "데이터/분할/validation_fold_5.csv",
+      "source_sha256": "d2906ba390116f12b448d74b32b61d49e5bf8ac3a03b9fe3e7cc90f0a321512f",
+      "uploaded_sha256": "d2906ba390116f12b448d74b32b61d49e5bf8ac3a03b9fe3e7cc90f0a321512f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "01. Data_Raw/splits/분할_사용안내.txt",
+      "uploaded": "데이터/분할/분할_사용안내.txt",
+      "source_sha256": "6e68992212b09bcc552b7bf1366c43e12cb7b0f69df543a2d234a36b81615411",
+      "uploaded_sha256": "6e68992212b09bcc552b7bf1366c43e12cb7b0f69df543a2d234a36b81615411",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/summary.json",
+      "uploaded": "데이터/전처리/summary.json",
+      "source_sha256": "ede14e6b25693a71e0ba24d7c5fe736454ce49cd2c919154685f2e91015465e6",
+      "uploaded_sha256": "ede14e6b25693a71e0ba24d7c5fe736454ce49cd2c919154685f2e91015465e6",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/test_korea.csv",
+      "uploaded": "데이터/전처리/test_korea.csv",
+      "source_sha256": "e3b582e9bef617160265d4229376d38794a162d842a41ab41a5844373667c32d",
+      "uploaded_sha256": "e3b582e9bef617160265d4229376d38794a162d842a41ab41a5844373667c32d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/test_melidos.csv",
+      "uploaded": "데이터/전처리/test_melidos.csv",
+      "source_sha256": "8498cd264a662e2eed7ef99413ad7b8ab1d824d17386eec44dd4e4d910935da7",
+      "uploaded_sha256": "8498cd264a662e2eed7ef99413ad7b8ab1d824d17386eec44dd4e4d910935da7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_fold_1.csv",
+      "uploaded": "데이터/전처리/train_fold_1.csv",
+      "source_sha256": "23675ca966612b278600f50a2498d175693b37b763fbeaaabe23d91b84816bc2",
+      "uploaded_sha256": "23675ca966612b278600f50a2498d175693b37b763fbeaaabe23d91b84816bc2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_fold_2.csv",
+      "uploaded": "데이터/전처리/train_fold_2.csv",
+      "source_sha256": "5ae4276460872908e81afc959f8783a35794b9e202faa9d1f74c270fdb9001a2",
+      "uploaded_sha256": "5ae4276460872908e81afc959f8783a35794b9e202faa9d1f74c270fdb9001a2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_fold_3.csv",
+      "uploaded": "데이터/전처리/train_fold_3.csv",
+      "source_sha256": "30fb3e67407ef30be3397f92bcc6d519f8ddfb74ba356ea1a7d55ea315e94087",
+      "uploaded_sha256": "30fb3e67407ef30be3397f92bcc6d519f8ddfb74ba356ea1a7d55ea315e94087",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_fold_4.csv",
+      "uploaded": "데이터/전처리/train_fold_4.csv",
+      "source_sha256": "11df9a7723af50f6390fea3469a318b3badbf12c17f4c743d8d667312439b29a",
+      "uploaded_sha256": "11df9a7723af50f6390fea3469a318b3badbf12c17f4c743d8d667312439b29a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_fold_5.csv",
+      "uploaded": "데이터/전처리/train_fold_5.csv",
+      "source_sha256": "c99fa725ded333bd41cb5cd8a432d6c09f2777d130c448b6cc4fd98e5b04e138",
+      "uploaded_sha256": "c99fa725ded333bd41cb5cd8a432d6c09f2777d130c448b6cc4fd98e5b04e138",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_melidos.csv",
+      "uploaded": "데이터/전처리/train_melidos.csv",
+      "source_sha256": "23675ca966612b278600f50a2498d175693b37b763fbeaaabe23d91b84816bc2",
+      "uploaded_sha256": "23675ca966612b278600f50a2498d175693b37b763fbeaaabe23d91b84816bc2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/train_melidos_all.csv",
+      "uploaded": "데이터/전처리/train_melidos_all.csv",
+      "source_sha256": "66a5e6ed10bea7b1ea2dcae6e88fe4442b97cf76045ee939dde2856221b6fa5a",
+      "uploaded_sha256": "66a5e6ed10bea7b1ea2dcae6e88fe4442b97cf76045ee939dde2856221b6fa5a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/validation_fold_1.csv",
+      "uploaded": "데이터/전처리/validation_fold_1.csv",
+      "source_sha256": "8f45c1a04f4a9e72b286dcb8d7557a3c479d93a9c3fa0e01a4a75130bcf3b056",
+      "uploaded_sha256": "8f45c1a04f4a9e72b286dcb8d7557a3c479d93a9c3fa0e01a4a75130bcf3b056",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/validation_fold_2.csv",
+      "uploaded": "데이터/전처리/validation_fold_2.csv",
+      "source_sha256": "c29ce2f939d681c8ef9ec91969caead471cfd5586aa92b742691e892a820b5a3",
+      "uploaded_sha256": "c29ce2f939d681c8ef9ec91969caead471cfd5586aa92b742691e892a820b5a3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/validation_fold_3.csv",
+      "uploaded": "데이터/전처리/validation_fold_3.csv",
+      "source_sha256": "17b93c7002affb8a8ad9d343337c0d3fca89e776822e9d17a7e8f426bfcd882d",
+      "uploaded_sha256": "17b93c7002affb8a8ad9d343337c0d3fca89e776822e9d17a7e8f426bfcd882d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/validation_fold_4.csv",
+      "uploaded": "데이터/전처리/validation_fold_4.csv",
+      "source_sha256": "0bf19e76d6bfdb83571e29671764085bcd1adc8b080639d0b5eba54152bb0a51",
+      "uploaded_sha256": "0bf19e76d6bfdb83571e29671764085bcd1adc8b080639d0b5eba54152bb0a51",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/validation_fold_5.csv",
+      "uploaded": "데이터/전처리/validation_fold_5.csv",
+      "source_sha256": "63d9aaa293c1ff31bbb84e54f4fa1f26e87b4139437a2ccaf7d950fb8e00b8dc",
+      "uploaded_sha256": "63d9aaa293c1ff31bbb84e54f4fa1f26e87b4139437a2ccaf7d950fb8e00b8dc",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/data/validation_melidos.csv",
+      "uploaded": "데이터/전처리/validation_melidos.csv",
+      "source_sha256": "8f45c1a04f4a9e72b286dcb8d7557a3c479d93a9c3fa0e01a4a75130bcf3b056",
+      "uploaded_sha256": "8f45c1a04f4a9e72b286dcb8d7557a3c479d93a9c3fa0e01a4a75130bcf3b056",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "02. PreProcessing/prepare.py",
+      "uploaded": "코드/prepare.py",
+      "source_sha256": "7385cca846f3feec73d94e1bd381b19dcc8dad2d377118d81c1211a1b1dc2cc3",
+      "uploaded_sha256": "b0bc4d1da16735dc3de3c224d40a0165003df2ffaf98955bcdcd79fb3b4754f2",
+      "unchanged_bytes": false
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/baseline.py",
+      "uploaded": "코드/baseline.py",
+      "source_sha256": "0b8cde155ff98b9fe5096ff157125e739aa4730fab9e484e79497840ecf24e80",
+      "uploaded_sha256": "0b8cde155ff98b9fe5096ff157125e739aa4730fab9e484e79497840ecf24e80",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/compare_trees.py",
+      "uploaded": "코드/compare_trees.py",
+      "source_sha256": "b3688890774f35227c56a8e914634cdd614acedf96abdc2209380b502564eeb6",
+      "uploaded_sha256": "ed1583670fdddf8678b0e7cb22beb738a57b9e2b7893e8b97a7dc68996ecf651",
+      "unchanged_bytes": false
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/evaluate.py",
+      "uploaded": "코드/evaluate.py",
+      "source_sha256": "506dd9d1a428598347fd952e162835ae24c1b6840042fc04b3b9c4ce0df83408",
+      "uploaded_sha256": "9cdacb57a37479eae62407bf93cef491af34ca123b2fd061609e568bce49adb3",
+      "unchanged_bytes": false
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/gradient_boosting.py",
+      "uploaded": "코드/gradient_boosting.py",
+      "source_sha256": "21236c0f619e6ad4941a8f6ea0448020ebc71b40341530637a2033b84138233d",
+      "uploaded_sha256": "21236c0f619e6ad4941a8f6ea0448020ebc71b40341530637a2033b84138233d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/mlp.py",
+      "uploaded": "코드/mlp.py",
+      "source_sha256": "ead7e8f0697299775047f8ed7852337190e0ff74726512c65bb40522fdafad3a",
+      "uploaded_sha256": "ead7e8f0697299775047f8ed7852337190e0ff74726512c65bb40522fdafad3a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/random_forest.py",
+      "uploaded": "코드/random_forest.py",
+      "source_sha256": "56238bc3c86313ad6030ad3e581bc5f2772a430ba0890df0aaef2543a20c5175",
+      "uploaded_sha256": "56238bc3c86313ad6030ad3e581bc5f2772a430ba0890df0aaef2543a20c5175",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/ridge_regression.py",
+      "uploaded": "코드/ridge_regression.py",
+      "source_sha256": "41a8e1a6e2bab830efff865b422a9a23898740d9bb3f942ba05911f1a2a11db5",
+      "uploaded_sha256": "41a8e1a6e2bab830efff865b422a9a23898740d9bb3f942ba05911f1a2a11db5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/verify.py",
+      "uploaded": "코드/verify.py",
+      "source_sha256": "b42025f488a8c8a5dde3158e81eccea3dfecf748617d9d9c5483043bd7caec80",
+      "uploaded_sha256": "0d1c54e38cbeb3731b719fe02250429177891ef1f63dd18e3588b8d7ec7691d0",
+      "unchanged_bytes": false
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/xgboost_regressor.py",
+      "uploaded": "코드/xgboost_regressor.py",
+      "source_sha256": "bb7189fa4b10a0d354fb24324d38469c98c60c9b57ec5a9b414a90d3372476d6",
+      "uploaded_sha256": "bb7189fa4b10a0d354fb24324d38469c98c60c9b57ec5a9b414a90d3372476d6",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/cv_by_fold.csv",
+      "uploaded": "실험결과/교차검증/cv_by_fold.csv",
+      "source_sha256": "ae21023f0c53d8542a33aa825925a51b72aaaa0e709dcf867ccda958ee5a4d42",
+      "uploaded_sha256": "ae21023f0c53d8542a33aa825925a51b72aaaa0e709dcf867ccda958ee5a4d42",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/cv_groups.csv",
+      "uploaded": "실험결과/교차검증/cv_groups.csv",
+      "source_sha256": "5bbab985fc4ed6ae44843020cd3643efdfcfe7e65a4a934a62ee7d58c744d9e7",
+      "uploaded_sha256": "5bbab985fc4ed6ae44843020cd3643efdfcfe7e65a4a934a62ee7d58c744d9e7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/cv_summary.csv",
+      "uploaded": "실험결과/교차검증/cv_summary.csv",
+      "source_sha256": "c0b96b83b08d41026d45ecac2853aa3f085ad85ddf85b19b724bf18675e7e25b",
+      "uploaded_sha256": "c0b96b83b08d41026d45ecac2853aa3f085ad85ddf85b19b724bf18675e7e25b",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/holdout_metrics.csv",
+      "uploaded": "실험결과/테스트/holdout_metrics.csv",
+      "source_sha256": "884eea293b1f4ed448c9527a48759eac0faee5736397e925b0637ae29b5f868d",
+      "uploaded_sha256": "884eea293b1f4ed448c9527a48759eac0faee5736397e925b0637ae29b5f868d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/holdout_predictions.csv",
+      "uploaded": "실험결과/테스트/holdout_predictions.csv",
+      "source_sha256": "7ff522edc074edd71aa8a72fd075c5a18ffc71515f7cd44b89c6af3b4b7346f8",
+      "uploaded_sha256": "7ff522edc074edd71aa8a72fd075c5a18ffc71515f7cd44b89c6af3b4b7346f8",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/learning_curves.csv",
+      "uploaded": "실험결과/교차검증/learning_curves.csv",
+      "source_sha256": "9f34eb5d174b13067e01815984e5617d1a4c7f1ebf87bf401e7230503046dde4",
+      "uploaded_sha256": "9f34eb5d174b13067e01815984e5617d1a4c7f1ebf87bf401e7230503046dde4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/learning_curves.png",
+      "uploaded": "그림/learning_curves.png",
+      "source_sha256": "fb96cd88fed93b7186bbb41fc327fb5f6471d32aa26c1de5c9d254fb03d371c5",
+      "uploaded_sha256": "fb96cd88fed93b7186bbb41fc327fb5f6471d32aa26c1de5c9d254fb03d371c5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/model_A_mlp.joblib",
+      "uploaded": "모델/비교/model_A_mlp.joblib",
+      "source_sha256": "561604b081cb4e1b8ecd85e5c18a537fa63772ca719777603058fbb1094e23d0",
+      "uploaded_sha256": "561604b081cb4e1b8ecd85e5c18a537fa63772ca719777603058fbb1094e23d0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/model_A_selected.joblib",
+      "uploaded": "모델/최종/model_A_selected.joblib",
+      "source_sha256": "561604b081cb4e1b8ecd85e5c18a537fa63772ca719777603058fbb1094e23d0",
+      "uploaded_sha256": "561604b081cb4e1b8ecd85e5c18a537fa63772ca719777603058fbb1094e23d0",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/model_B_mlp.joblib",
+      "uploaded": "모델/비교/model_B_mlp.joblib",
+      "source_sha256": "5245e8e78bfe14e6948da73c990660d7f2f7137208409e2f0f21cac20b1fe9be",
+      "uploaded_sha256": "5245e8e78bfe14e6948da73c990660d7f2f7137208409e2f0f21cac20b1fe9be",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/model_B_selected.joblib",
+      "uploaded": "모델/최종/model_B_selected.joblib",
+      "source_sha256": "5245e8e78bfe14e6948da73c990660d7f2f7137208409e2f0f21cac20b1fe9be",
+      "uploaded_sha256": "5245e8e78bfe14e6948da73c990660d7f2f7137208409e2f0f21cac20b1fe9be",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/paired_intervals.csv",
+      "uploaded": "실험결과/테스트/paired_intervals.csv",
+      "source_sha256": "a3335c41e51b933ee370496836ce01610bea6869f92a27e08b0abbbfc1054bed",
+      "uploaded_sha256": "a3335c41e51b933ee370496836ce01610bea6869f92a27e08b0abbbfc1054bed",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/selection.json",
+      "uploaded": "실험결과/교차검증/selection.json",
+      "source_sha256": "06825b49b4c7530e0035a72db1ab8e619a9b54097f80771365ad3ef33901ba5f",
+      "uploaded_sha256": "06825b49b4c7530e0035a72db1ab8e619a9b54097f80771365ad3ef33901ba5f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/results/versions.json",
+      "uploaded": "실행환경/versions.json",
+      "source_sha256": "58f4293e3fa82dd833409f9f55662151bfb8f616845a104956ec962ada552da3",
+      "uploaded_sha256": "58f4293e3fa82dd833409f9f55662151bfb8f616845a104956ec962ada552da3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/cv_summary.csv",
+      "uploaded": "실험결과/추가트리비교/cv_summary.csv",
+      "source_sha256": "2ab2d8f2f4cc058a6ed63bd7c8d35bbcd35b16d61c42624d0caf73fad80e1788",
+      "uploaded_sha256": "2ab2d8f2f4cc058a6ed63bd7c8d35bbcd35b16d61c42624d0caf73fad80e1788",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/holdout_metrics.csv",
+      "uploaded": "실험결과/추가트리비교/holdout_metrics.csv",
+      "source_sha256": "bc5b038cbf0c466ff0e2a9f5ded39827a6bf9f2cdbe7aa5ca2331a275f8fbc01",
+      "uploaded_sha256": "bc5b038cbf0c466ff0e2a9f5ded39827a6bf9f2cdbe7aa5ca2331a275f8fbc01",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/holdout_predictions.csv",
+      "uploaded": "실험결과/추가트리비교/holdout_predictions.csv",
+      "source_sha256": "b6e35ff5cc83a4e6a54438e04f9531aee19f0478c8d4a5e1814ad8bb9ab5b3d9",
+      "uploaded_sha256": "b6e35ff5cc83a4e6a54438e04f9531aee19f0478c8d4a5e1814ad8bb9ab5b3d9",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/model_A_random_forest.joblib",
+      "uploaded": "모델/비교/model_A_random_forest.joblib",
+      "source_sha256": "545d671b8a5cf6d5ca3e1aae7421130f20dc45f7efe14b57c73335dbaddaa32f",
+      "uploaded_sha256": "545d671b8a5cf6d5ca3e1aae7421130f20dc45f7efe14b57c73335dbaddaa32f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/model_A_xgboost.joblib",
+      "uploaded": "모델/비교/model_A_xgboost.joblib",
+      "source_sha256": "74913cf627020bfe4e11ef3d8f12789cc6d88e2223a0e4b2c95e7937a38c1321",
+      "uploaded_sha256": "74913cf627020bfe4e11ef3d8f12789cc6d88e2223a0e4b2c95e7937a38c1321",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/model_B_random_forest.joblib",
+      "uploaded": "모델/비교/model_B_random_forest.joblib",
+      "source_sha256": "781e1b32769b2e47c1bbde5a6ea920157513c8b47bf7c16d5771d541ff0bc1fd",
+      "uploaded_sha256": "781e1b32769b2e47c1bbde5a6ea920157513c8b47bf7c16d5771d541ff0bc1fd",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/model_B_xgboost.joblib",
+      "uploaded": "모델/비교/model_B_xgboost.joblib",
+      "source_sha256": "5044b1c2ae84968719acfd53d74317342adf211a47de9541c129bd5b13be538e",
+      "uploaded_sha256": "5044b1c2ae84968719acfd53d74317342adf211a47de9541c129bd5b13be538e",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/paired_intervals.csv",
+      "uploaded": "실험결과/추가트리비교/paired_intervals.csv",
+      "source_sha256": "7ecf2d385b01845fadf8124b355093ddc62c71e894dcf09cdde3a55be6eda099",
+      "uploaded_sha256": "7ecf2d385b01845fadf8124b355093ddc62c71e894dcf09cdde3a55be6eda099",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/RESULTS.md",
+      "uploaded": "실험결과/추가트리비교/RESULTS.md",
+      "source_sha256": "a0768207e82719c1ff54ae4826ec28f5602f4f3b32a95da758a405a94449af17",
+      "uploaded_sha256": "a0768207e82719c1ff54ae4826ec28f5602f4f3b32a95da758a405a94449af17",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/tree_comparison/selection.json",
+      "uploaded": "실험결과/추가트리비교/selection.json",
+      "source_sha256": "69c5717f5894bf3c5ebc699d83a68fc6fc2267a765618f85f07d2295cf927981",
+      "uploaded_sha256": "69c5717f5894bf3c5ebc699d83a68fc6fc2267a765618f85f07d2295cf927981",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/audit_report.json",
+      "uploaded": "실험결과/상세분석/audit_report.json",
+      "source_sha256": "ae7b25d9aa8c98535c22df264c637dfa1d830bf2bc066ec91f2b5c15cf83d1ce",
+      "uploaded_sha256": "ae7b25d9aa8c98535c22df264c637dfa1d830bf2bc066ec91f2b5c15cf83d1ce",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/audit_summary.md",
+      "uploaded": "실험결과/상세분석/audit_summary.md",
+      "source_sha256": "3b2755c112e331d3f2b43add0a537c99379cf82803311b45deb4fce2b682e928",
+      "uploaded_sha256": "3b2755c112e331d3f2b43add0a537c99379cf82803311b45deb4fce2b682e928",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/B_duration_curve_train_median_profile.csv",
+      "uploaded": "실험결과/상세분석/B_duration_curve_train_median_profile.csv",
+      "source_sha256": "99ab27236d09fc0a8133d66e3b09f59d026c0fb39adeb5c2fd42d3a9ef82c659",
+      "uploaded_sha256": "99ab27236d09fc0a8133d66e3b09f59d026c0fb39adeb5c2fd42d3a9ef82c659",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/b_same_mlp_ablation_cv.csv",
+      "uploaded": "실험결과/상세분석/b_same_mlp_ablation_cv.csv",
+      "source_sha256": "d818c2f13d7734ff2a62de8f7a2dc23082ce0780e341e11cbc258b68d1f7bfb7",
+      "uploaded_sha256": "d818c2f13d7734ff2a62de8f7a2dc23082ce0780e341e11cbc258b68d1f7bfb7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/cv_best_by_algorithm.csv",
+      "uploaded": "실험결과/상세분석/cv_best_by_algorithm.csv",
+      "source_sha256": "89a9dcaf45127bef93b8cc256e8c3decbb72f885f4e02375edafed823536acbb",
+      "uploaded_sha256": "89a9dcaf45127bef93b8cc256e8c3decbb72f885f4e02375edafed823536acbb",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/followup_by_participant.csv",
+      "uploaded": "실험결과/상세분석/followup_by_participant.csv",
+      "source_sha256": "bffb7c12c706c29ecbf8daefe42d5d0e2df1f162718a3d870008993b0c44586a",
+      "uploaded_sha256": "bffb7c12c706c29ecbf8daefe42d5d0e2df1f162718a3d870008993b0c44586a",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/followup_summary.csv",
+      "uploaded": "실험결과/상세분석/followup_summary.csv",
+      "source_sha256": "93c09c53a3f438cfd4908bc884b81494b43d2fa95613c7fc813b5884d2953a4d",
+      "uploaded_sha256": "93c09c53a3f438cfd4908bc884b81494b43d2fa95613c7fc813b5884d2953a4d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/history_bands.csv",
+      "uploaded": "실험결과/상세분석/history_bands.csv",
+      "source_sha256": "1317381317efdefa15b28762c42765c7bb3230eff4de18cb0b13a8a62b2b19ee",
+      "uploaded_sha256": "1317381317efdefa15b28762c42765c7bb3230eff4de18cb0b13a8a62b2b19ee",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/input_distributions.csv",
+      "uploaded": "실험결과/상세분석/input_distributions.csv",
+      "source_sha256": "17084e26c96978cf5458afbfc15a63017a895ff4157dd8ab66ee834109c4a9df",
+      "uploaded_sha256": "17084e26c96978cf5458afbfc15a63017a895ff4157dd8ab66ee834109c4a9df",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/largest_error_examples.csv",
+      "uploaded": "실험결과/상세분석/largest_error_examples.csv",
+      "source_sha256": "acdd96ea4ca7b1de8b6c1541136fe010b8cbd6b9fc104136f867cf3c9c49c7a2",
+      "uploaded_sha256": "acdd96ea4ca7b1de8b6c1541136fe010b8cbd6b9fc104136f867cf3c9c49c7a2",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/latency_bands.csv",
+      "uploaded": "실험결과/상세분석/latency_bands.csv",
+      "source_sha256": "86103b7ed546c8a01bbe2a8b7abe4aafd2e6a65d90052d05bf90a6d7164d028d",
+      "uploaded_sha256": "86103b7ed546c8a01bbe2a8b7abe4aafd2e6a65d90052d05bf90a6d7164d028d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/learning_curve_summary.csv",
+      "uploaded": "실험결과/상세분석/learning_curve_summary.csv",
+      "source_sha256": "2d20921851a1b18191d12f488191a3a6d8e463e58ed67efb46afb3c8b0012ff6",
+      "uploaded_sha256": "2d20921851a1b18191d12f488191a3a6d8e463e58ed67efb46afb3c8b0012ff6",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/numpy_model_verification.csv",
+      "uploaded": "실험결과/상세분석/numpy_model_verification.csv",
+      "source_sha256": "b154b73f1befce0795efaaed85d4bd5c0503973d413bc7b96cfb8378bed884b5",
+      "uploaded_sha256": "b154b73f1befce0795efaaed85d4bd5c0503973d413bc7b96cfb8378bed884b5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/participant_errors.csv",
+      "uploaded": "실험결과/상세분석/participant_errors.csv",
+      "source_sha256": "6a5a24fa4fcf392e8e745b5c7e350c08b535cdeb775ff5e15509b7a9b32ae6f3",
+      "uploaded_sha256": "6a5a24fa4fcf392e8e745b5c7e350c08b535cdeb775ff5e15509b7a9b32ae6f3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/quality_bands.csv",
+      "uploaded": "실험결과/상세분석/quality_bands.csv",
+      "source_sha256": "84a03dfdbe3968ed905d1adbf17b8e1bdc321309c98a0805d018f62980fd4736",
+      "uploaded_sha256": "84a03dfdbe3968ed905d1adbf17b8e1bdc321309c98a0805d018f62980fd4736",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/selected_mlp_cv_fold_summary.csv",
+      "uploaded": "실험결과/상세분석/selected_mlp_cv_fold_summary.csv",
+      "source_sha256": "69896c7e76b868c7f2163e13b56a754eb7cf22a8dfec96ef2325e2863c068e6d",
+      "uploaded_sha256": "69896c7e76b868c7f2163e13b56a754eb7cf22a8dfec96ef2325e2863c068e6d",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/site_errors.csv",
+      "uploaded": "실험결과/상세분석/site_errors.csv",
+      "source_sha256": "2dd71d52f8628c0667e205b2cf3b3b77b38efa89de2ec729e3fc0fd4719d86a3",
+      "uploaded_sha256": "2dd71d52f8628c0667e205b2cf3b3b77b38efa89de2ec729e3fc0fd4719d86a3",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/verification_checks.csv",
+      "uploaded": "실험결과/상세분석/verification_checks.csv",
+      "source_sha256": "ee110c70874402b63430e206020b504cb2b3ca658d0966621b4ae91d4a1c06d4",
+      "uploaded_sha256": "ee110c70874402b63430e206020b504cb2b3ca658d0966621b4ae91d4a1c06d4",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/verified_metrics.csv",
+      "uploaded": "실험결과/상세분석/verified_metrics.csv",
+      "source_sha256": "99dcef958a9365bd09260a2689b4a0f10e252de0ef5ac23263c1ef4ea655e312",
+      "uploaded_sha256": "99dcef958a9365bd09260a2689b4a0f10e252de0ef5ac23263c1ef4ea655e312",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/verified_paired_intervals.csv",
+      "uploaded": "실험결과/상세분석/verified_paired_intervals.csv",
+      "source_sha256": "38ce6719f9a5f40151e2f5e493b4ec8fecc7934d3180916e94716c9e459bd748",
+      "uploaded_sha256": "38ce6719f9a5f40151e2f5e493b4ec8fecc7934d3180916e94716c9e459bd748",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/analysis/verified_split_summary.csv",
+      "uploaded": "실험결과/상세분석/verified_split_summary.csv",
+      "source_sha256": "e92905992307934cfae83a9a7eef5cc68b3d04853ed632b6f39e1af0af2be352",
+      "uploaded_sha256": "e92905992307934cfae83a9a7eef5cc68b3d04853ed632b6f39e1af0af2be352",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/01_A_actual_vs_predicted.png",
+      "uploaded": "그림/01_A_actual_vs_predicted.png",
+      "source_sha256": "711d444ce0786c514f13e05299ce411d458509ceff09f3c3e896ae658b799451",
+      "uploaded_sha256": "711d444ce0786c514f13e05299ce411d458509ceff09f3c3e896ae658b799451",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/02_A_error_by_actual_latency.png",
+      "uploaded": "그림/02_A_error_by_actual_latency.png",
+      "source_sha256": "34a2dc819e837c3325fa882bed5de3a16eb6026cac76236ff2bb3a3172e926c5",
+      "uploaded_sha256": "34a2dc819e837c3325fa882bed5de3a16eb6026cac76236ff2bb3a3172e926c5",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/03_B_error_by_quality.png",
+      "uploaded": "그림/03_B_error_by_quality.png",
+      "source_sha256": "3184f7cfceb6d7c2efb1c0604b2701d9253e595590e7d3615bcc749cd2ca44d9",
+      "uploaded_sha256": "3184f7cfceb6d7c2efb1c0604b2701d9253e595590e7d3615bcc749cd2ca44d9",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/04_error_by_history.png",
+      "uploaded": "그림/04_error_by_history.png",
+      "source_sha256": "56997ef69ac7044432002fd464f6187fba89fb52d73ab72d47de9eb3c7125ba7",
+      "uploaded_sha256": "56997ef69ac7044432002fd464f6187fba89fb52d73ab72d47de9eb3c7125ba7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/05_site_errors.png",
+      "uploaded": "그림/05_site_errors.png",
+      "source_sha256": "1316b5e04ec495f707219bb550971460b4cd7e7b93ec90e2a233bfeb61f52ba7",
+      "uploaded_sha256": "1316b5e04ec495f707219bb550971460b4cd7e7b93ec90e2a233bfeb61f52ba7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/06_paired_uncertainty.png",
+      "uploaded": "그림/06_paired_uncertainty.png",
+      "source_sha256": "2ad22e586515923b3843b78b5f30c29f763c19e00b933d9aa6a9afcf41abad04",
+      "uploaded_sha256": "2ad22e586515923b3843b78b5f30c29f763c19e00b933d9aa6a9afcf41abad04",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/07_input_target_distributions.png",
+      "uploaded": "그림/07_input_target_distributions.png",
+      "source_sha256": "0467cca74cd24613679f83a8cf8afe6097140b6adec2db0ec28737ecf394130f",
+      "uploaded_sha256": "0467cca74cd24613679f83a8cf8afe6097140b6adec2db0ec28737ecf394130f",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/08_primary_test_comparison.png",
+      "uploaded": "그림/08_primary_test_comparison.png",
+      "source_sha256": "22d28d5e2bd95bd43eb92d4ec78d3db0ab6f5b8c984c06c7d757ff24f689a9b7",
+      "uploaded_sha256": "22d28d5e2bd95bd43eb92d4ec78d3db0ab6f5b8c984c06c7d757ff24f689a9b7",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/figures/09_B_duration_behavior.png",
+      "uploaded": "그림/09_B_duration_behavior.png",
+      "source_sha256": "a13f7e3199ca9b5a99cc0c7d77220371e318f9df91724dd58093e3fbd04c0eea",
+      "uploaded_sha256": "a13f7e3199ca9b5a99cc0c7d77220371e318f9df91724dd58093e3fbd04c0eea",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/RESULTS.md",
+      "uploaded": "실험결과/실험요약.md",
+      "source_sha256": "f2415dc9a7f08e1009db8c9237de8a832af78af5698ed587fe31ecbf4f7ce6ce",
+      "uploaded_sha256": "3902eb70d3ffe5c5e7625995cc304ccc64d06a7146225ebc0d58c71ffba71f81",
+      "unchanged_bytes": false
+    },
+    {
+      "source": "03. Data_Train_Model/Sleep_Model_Reproduction/requirements.txt",
+      "uploaded": "실행환경/requirements.txt",
+      "source_sha256": "e1f952cf9c4d81dedefd3e2eb8260d7c0e0f613eb0e0ead604b4e9a6ffc2ba49",
+      "uploaded_sha256": "e1f952cf9c4d81dedefd3e2eb8260d7c0e0f613eb0e0ead604b4e9a6ffc2ba49",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/scripts/analysis_requirements.txt",
+      "uploaded": "실행환경/requirements-analysis.txt",
+      "source_sha256": "ad5de7916b0b2d1566639cf7da7d78fb9a5954635532943f96d0df55560cd833",
+      "uploaded_sha256": "ad5de7916b0b2d1566639cf7da7d78fb9a5954635532943f96d0df55560cd833",
+      "unchanged_bytes": true
+    },
+    {
+      "source": "04. Model_Analysis/scripts/analyze_results.py",
+      "uploaded": "코드/analyze_results.py",
+      "source_sha256": "33aa031551f93139de13837f8f1ed47a72cba7a0764ce5f6c6fa8bdf3c01e8e5",
+      "uploaded_sha256": "24bb04d567ed6cfaf2988706ba2b4993c283ebe627d15b68d9524f966e5c14d4",
+      "unchanged_bytes": false
+    },
+    {
+      "source": "04. Model_Analysis/수면프로젝트_1-10_통합원고.md",
+      "uploaded": "기술블로그.md",
+      "source_sha256": "780278b9cb7eee6de9a4c815355b3f65b0837877ae6c03d23cd1e388e8803006",
+      "uploaded_sha256": "0d74b97e6e05313dbbdc5c2da007c746f93646ec33e49b34e6402ebe8ff435d4",
+      "unchanged_bytes": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "A": {
+    "target": "bed_to_sleep_min",
+    "unit": "minutes",
+    "features": [
+      "past3_latency_median_min",
+      "past3_latency_n",
+      "prev_sleep_interval_min",
+      "past3_sleep_interval_median_min",
+      "past3_sleep_interval_n"
+    ]
+  },
+  "B": {
+    "target": "sleep_quality",
+    "range": [
+      1,
+      5
+    ],
+    "features": [
+      "past3_latency_median_min",
+      "past3_latency_n",
+      "prev_sleep_interval_min",
+      "past3_sleep_interval_median_min",
+      "past3_sleep_interval_n",
+      "sleep_interval_min"
+    ]
+  },
+  "history": "Only records strictly earlier than the predicted night; last up to 3 nonmissing values per measure.",
+  "sleep_interval": "Elapsed minutes from sleep onset to final waking, including nocturnal awakenings.",
+  "preprocessing": "SimpleImputer(median, keep_empty_features=True) then StandardScaler, fitted on eligible training records only.",
+  "storage": "Each final joblib contains feature order, fitted preprocessing pipeline and weights for all 3 seeds.",
+  "network": {
+    "hidden_widths": [
+      16,
+      8
+    ],
+    "dropout": 0.1,
+    "epochs": 60,
+    "seeds": [
+      42,
+      7,
+      17
+    ]
+  },
+  "output": {
+    "A": "softplus(raw) * 30",
+    "B": "1 + sigmoid(raw) * 4"
+  }
+}

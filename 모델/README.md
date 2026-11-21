@@ -1,0 +1,12 @@
+# 학습 완료 모델
+
+| 위치 | 내용 |
+| --- | --- |
+| [최종/model_A_selected.joblib](최종/model_A_selected.joblib) | 입면 지연 예측 모델 A |
+| [최종/model_B_selected.joblib](최종/model_B_selected.joblib) | 수면의 질 예측 모델 B |
+| [비교](비교) | MLP·Random Forest·XGBoost 비교 모델 |
+| [전처리정보.json](전처리정보.json) | 입력 열·단위·입력 변환과 출력 범위 |
+
+최종 모델은 모두 MLP이며, 결측 대체·표준화 정보와 세 난수 시드의 가중치가 각 `joblib`에 함께 저장되어 있다. A는 과거 이력 5개, B는 같은 이력과 수면 구간 길이를 사용한다. A의 예측값을 B의 입력으로 넣지 않는다.
+
+[최종 설정](../실험결과/교차검증/selection.json) · [학습 환경](../실행환경/versions.json) · [예측 시연](../예측시연/README.md)

@@ -1,0 +1,3 @@
+﻿task,fold_macro_mae_unweighted_mean,fold_macro_mae_sample_sd,pooled_oof_participant_macro_mae,folds
+A,29.039976022496404,6.6097695862609145,29.067372484709686,5
+B,0.7780095915176466,0.05035995181393194,0.7780646056094498,5

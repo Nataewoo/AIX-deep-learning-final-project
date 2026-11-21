@@ -1,0 +1,242 @@
+{
+  "train_melidos": {
+    "rows": 815,
+    "participants": 117,
+    "A_eligible": 805,
+    "B_eligible": 800,
+    "missing": {
+      "past3_latency_median_min": 120,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 127,
+      "past3_sleep_interval_median_min": 120,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 10,
+      "bed_to_sleep_min": 10,
+      "sleep_quality": 6
+    }
+  },
+  "validation_melidos": {
+    "rows": 205,
+    "participants": 30,
+    "A_eligible": 202,
+    "B_eligible": 201,
+    "missing": {
+      "past3_latency_median_min": 30,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 32,
+      "past3_sleep_interval_median_min": 30,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 3,
+      "bed_to_sleep_min": 3,
+      "sleep_quality": 1
+    }
+  },
+  "test_melidos": {
+    "rows": 262,
+    "participants": 37,
+    "A_eligible": 259,
+    "B_eligible": 259,
+    "missing": {
+      "past3_latency_median_min": 38,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 39,
+      "past3_sleep_interval_median_min": 38,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 3,
+      "bed_to_sleep_min": 3,
+      "sleep_quality": 0
+    }
+  },
+  "test_korea": {
+    "rows": 1372,
+    "participants": 49,
+    "A_eligible": 1372,
+    "B_eligible": 0,
+    "missing": {
+      "past3_latency_median_min": 49,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 49,
+      "past3_sleep_interval_median_min": 49,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 0,
+      "bed_to_sleep_min": 0,
+      "sleep_quality": 1372
+    }
+  },
+  "train_melidos_all": {
+    "rows": 1020,
+    "participants": 147,
+    "A_eligible": 1007,
+    "B_eligible": 1001,
+    "missing": {
+      "past3_latency_median_min": 150,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 159,
+      "past3_sleep_interval_median_min": 150,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 13,
+      "bed_to_sleep_min": 13,
+      "sleep_quality": 7
+    }
+  },
+  "train_fold_1": {
+    "rows": 815,
+    "participants": 117,
+    "A_eligible": 805,
+    "B_eligible": 800,
+    "missing": {
+      "past3_latency_median_min": 120,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 127,
+      "past3_sleep_interval_median_min": 120,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 10,
+      "bed_to_sleep_min": 10,
+      "sleep_quality": 6
+    }
+  },
+  "validation_fold_1": {
+    "rows": 205,
+    "participants": 30,
+    "A_eligible": 202,
+    "B_eligible": 201,
+    "missing": {
+      "past3_latency_median_min": 30,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 32,
+      "past3_sleep_interval_median_min": 30,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 3,
+      "bed_to_sleep_min": 3,
+      "sleep_quality": 1
+    }
+  },
+  "train_fold_2": {
+    "rows": 817,
+    "participants": 118,
+    "A_eligible": 807,
+    "B_eligible": 802,
+    "missing": {
+      "past3_latency_median_min": 121,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 127,
+      "past3_sleep_interval_median_min": 121,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 10,
+      "bed_to_sleep_min": 10,
+      "sleep_quality": 6
+    }
+  },
+  "validation_fold_2": {
+    "rows": 203,
+    "participants": 29,
+    "A_eligible": 200,
+    "B_eligible": 199,
+    "missing": {
+      "past3_latency_median_min": 29,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 32,
+      "past3_sleep_interval_median_min": 29,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 3,
+      "bed_to_sleep_min": 3,
+      "sleep_quality": 1
+    }
+  },
+  "train_fold_3": {
+    "rows": 817,
+    "participants": 118,
+    "A_eligible": 808,
+    "B_eligible": 803,
+    "missing": {
+      "past3_latency_median_min": 120,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 126,
+      "past3_sleep_interval_median_min": 120,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 9,
+      "bed_to_sleep_min": 9,
+      "sleep_quality": 6
+    }
+  },
+  "validation_fold_3": {
+    "rows": 203,
+    "participants": 29,
+    "A_eligible": 199,
+    "B_eligible": 198,
+    "missing": {
+      "past3_latency_median_min": 30,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 33,
+      "past3_sleep_interval_median_min": 30,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 4,
+      "bed_to_sleep_min": 4,
+      "sleep_quality": 1
+    }
+  },
+  "train_fold_4": {
+    "rows": 817,
+    "participants": 118,
+    "A_eligible": 805,
+    "B_eligible": 802,
+    "missing": {
+      "past3_latency_median_min": 120,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 129,
+      "past3_sleep_interval_median_min": 120,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 12,
+      "bed_to_sleep_min": 12,
+      "sleep_quality": 4
+    }
+  },
+  "validation_fold_4": {
+    "rows": 203,
+    "participants": 29,
+    "A_eligible": 202,
+    "B_eligible": 199,
+    "missing": {
+      "past3_latency_median_min": 30,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 30,
+      "past3_sleep_interval_median_min": 30,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 1,
+      "bed_to_sleep_min": 1,
+      "sleep_quality": 3
+    }
+  },
+  "train_fold_5": {
+    "rows": 814,
+    "participants": 117,
+    "A_eligible": 803,
+    "B_eligible": 797,
+    "missing": {
+      "past3_latency_median_min": 119,
+      "past3_latency_n": 0,
+      "prev_sleep_interval_min": 127,
+      "past3_sleep_interval_median_min": 119,
+      "past3_sleep_interval_n": 0,
+      "sleep_interval_min": 11,
+      "bed_to_sleep_min": 11,
+      "sleep_quality": 6
+    }
+  },
+  "validation_fold_5": {
+    "rows": 206,
+    "participants": 30,
+    "A_eligible": 204,
+    "B_eligible": 204,
+    "missing": {
+      "past3_latency_median_min": 31,
+      "past3_latency_n": 1,
+      "prev_sleep_interval_min": 32,
+      "past3_sleep_interval_median_min": 31,
+      "past3_sleep_interval_n": 1,
+      "sleep_interval_min": 2,
+      "bed_to_sleep_min": 2,
+      "sleep_quality": 1
+    }
+  }
+}

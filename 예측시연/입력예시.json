@@ -1,0 +1,10 @@
+{
+  "history": [
+    {"bed_to_sleep_min": 20, "sleep_interval_min": 420},
+    {"bed_to_sleep_min": 30, "sleep_interval_min": 450},
+    {"bed_to_sleep_min": 25, "sleep_interval_min": 480}
+  ],
+  "wake_time": "08:00",
+  "minimum_sleep_interval_minutes": 450,
+  "candidate_sleep_intervals_minutes": [420, 450, 480]
+}

@@ -1,0 +1,7 @@
+# Keep supplied datasets and saved artifacts byte-identical across checkouts.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.csv -whitespace
+*.png binary
+*.joblib binary
+데이터/** -whitespace
+실험결과/상세분석/audit_summary.md -whitespace

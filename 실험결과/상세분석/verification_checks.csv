@@ -1,0 +1,16 @@
+﻿check,status,detail
+raw_to_prepared_train_melidos,PASS,1020 records match stored prepared table
+raw_to_prepared_validation_melidos,PASS,262 records match stored prepared table
+raw_to_prepared_test_korea,PASS,1372 records match stored prepared table
+full_original_raw_to_prepared_train_melidos,PASS,1020 records match reconstruction from complete original team archive
+full_original_raw_to_prepared_validation_melidos,PASS,262 records match reconstruction from complete original team archive
+full_original_raw_to_prepared_test_korea,PASS,1372 records match reconstruction from complete original team archive
+split_participant_overlap,PASS,0 participants shared across all three splits
+past_only_history_train_melidos,PASS,All 1019 dated rows use strictly earlier dates only
+past_only_history_validation_melidos,PASS,All 262 dated rows use strictly earlier dates only
+past_only_history_test_korea,PASS,All 1372 dated rows use strictly earlier dates only
+recomputed_metrics_primary,PASS,All 13 saved metric rows match recomputation
+recomputed_metrics_posthoc_tree,PASS,All 8 saved metric rows match recomputation
+numpy_saved_model_inference,PASS,"8 comparisons pass atol=0.0001, rtol=0.000001"
+saved_preprocessing_train_only,PASS,Saved imputer medians and scaler mean/variance match eligible TRAIN records for A/B
+participant_bootstrap_10000,PASS,All stored primary 95% paired participant bootstrap intervals match

@@ -1,0 +1,4 @@
+﻿split,records,people,A_eligible,B_eligible
+train_melidos_all,1020,147,1007,1001
+test_melidos,262,37,259,259
+test_korea,1372,49,1372,0

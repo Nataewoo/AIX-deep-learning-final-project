@@ -1,0 +1,9 @@
+﻿task,role,dataset,n,max_absolute_prediction_difference
+A,selected,korea_all,1372,1.52587890625e-05
+A,selected,korea_last7,343,7.629394538355427e-06
+A,selected,melidos_holdout,259,7.62939453125e-06
+A,mlp,korea_all,1372,1.52587890625e-05
+A,mlp,korea_last7,343,7.629394538355427e-06
+A,mlp,melidos_holdout,259,7.62939453125e-06
+B,selected,melidos_holdout,259,4.768371586472142e-07
+B,mlp,melidos_holdout,259,4.768371586472142e-07

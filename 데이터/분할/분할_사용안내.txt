@@ -1,0 +1,32 @@
+﻿Train / Validation / Test 사용 안내
+작성일: 2026-11-21
+
+원래 열 이름·열 순서·값·결측값을 그대로 유지하고, 참가자 기준으로 행만 나눴습니다.
+기존 모델 결과의 cv_groups.csv와 동일한 5개 참가자 그룹을 사용했습니다. 새 무작위 분할을 하지 않았습니다.
+
+1. 교차검증
+train_fold_1.csv ~ train_fold_5.csv: 각 회차의 학습 4개 그룹.
+validation_fold_1.csv ~ validation_fold_5.csv: 각 회차의 검증 1개 그룹.
+같은 번호의 Train과 Validation을 함께 사용합니다. 한 사람의 모든 기록은 같은 그룹입니다.
+5회 전체에서 147명 모두 Validation에 정확히 1회, Train에 4회 사용됩니다.
+
+2. 최종 재학습
+train_melidos.csv: 해외 147명 전체 1,020행. 교차검증으로 설정을 고른 뒤 이 전체 파일로 다시 학습합니다.
+전체 train_melidos.csv와 validation_fold 파일을 한 회차 Train/Validation 쌍으로 사용하지 마세요. 그 경우 참가자가 겹칩니다.
+
+3. Test
+test_melidos.csv: 해외 37명 262행. 모델 A와 B의 별도 평가용입니다.
+test_korea.csv: 국내 49명 1,372행. 모델 A의 외부 Test에만 사용합니다.
+국내 자료는 Train·Validation에 넣지 않았으며, 수면의 질 정답을 새로 만들지 않았습니다.
+정답 등이 비어 있는 행도 원본대로 보존했습니다. A·B별 유효 행 선택은 모델 실행 시 기존 기준으로 수행합니다.
+
+1회차: Train 117명 / 815행, Validation 30명 / 205행
+2회차: Train 118명 / 817행, Validation 29명 / 203행
+3회차: Train 118명 / 817행, Validation 29명 / 203행
+4회차: Train 118명 / 817행, Validation 29명 / 203행
+5회차: Train 117명 / 814행, Validation 30명 / 206행
+
+기존 validation_melidos.csv의 37명은 이제 test_melidos.csv로 명확히 구분했습니다.
+기존 CSV 3개의 백업은 삭제했으며, 현재 사용하는 분할 CSV만 유지합니다.
+이번 작업은 이 splits 폴더의 데이터 구성만 변경합니다. 02·03·04의 코드와 데이터 복사본, 01의 상위 README는 수정하지 않았습니다.
+split_info.json은 파일별 인원·행 수와 참가자별 그룹 배정을 담은 보조 기록입니다. 학습 CSV에 그룹 열은 추가하지 않았습니다.
