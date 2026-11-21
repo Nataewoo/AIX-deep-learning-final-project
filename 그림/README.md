@@ -15,4 +15,4 @@
 | [08_primary_test_comparison.png](08_primary_test_comparison.png) | 모델별 평가 성능 |
 | [09_B_duration_behavior.png](09_B_duration_behavior.png) | 후보 수면 구간에 따른 B의 예측 |
 
-제공된 PNG를 그대로 보존했다. 각 그래프의 해석과 한계는 [기술 블로그](../기술블로그.md)에 있다.
+제공된 PNG를 그대로 보존했다. 각 그래프의 해석과 한계는 [README 본문](../README.md)에 있다.
