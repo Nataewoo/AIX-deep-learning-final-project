@@ -1,6 +1,6 @@
 """Recompute saved sleep-model results without retraining or test-set tuning.
 
-Run from the repository root using the command in 실행환경/README.md.
+Run from the repository root using the command in "실행환경/실행환경 안내.md".
 Dependencies: numpy, pandas, matplotlib, joblib, scikit-learn==1.7.2.
 Only deserialize model files supplied in the trusted team package.
 """
