@@ -668,17 +668,32 @@ RMSE의 ‘제곱근’은 자기 자신을 곱했을 때 원래 수가 되는 �
 
 ## 8. 참고자료 (Related Work)
 
-- [MeLiDos 9개 지역 원자료·변수 설명과 국내 자료 출처](/데이터%28Dataset%29/출처.md)
-- [국내 49명 수면일지 공개 데이터](https://doi.org/10.6084/m9.figshare.28509740)
-- [PyTorch의 Dropout 설명](https://docs.pytorch.org/docs/2.7/generated/torch.nn.Dropout.html)
-- [scikit-learn의 평균 절대 오차(MAE) 설명](https://scikit-learn.org/1.7/modules/generated/sklearn.metrics.mean_absolute_error.html)
-- 본문 수치의 근거: [교차검증 결과](/실험결과%28Experiment%20Results%29/교차검증/cv_summary.csv), [별도 평가 결과](/실험결과%28Experiment%20Results%29/테스트/holdout_metrics.csv), [오차 분석](/실험결과%28Experiment%20Results%29/상세분석), [시연 출력](/예측시연%28Prediction%20Demo%29/예측결과.json)
+### 8-1. 참고 논문
 
-팀에서 추가로 참고한 자료는 이후 함께 정리할 예정입니다.
+- **Carney, C. E. 외(2012), *Sleep*, 35(2), 287–302.** 표준 수면일지에서 잠자리에 든 시각과 잠을 청하기 시작한 시각을 따로 기록하는 방식을 확인했습니다. [The Consensus Sleep Diary: Standardizing Prospective Sleep Self-Monitoring](https://pmc.ncbi.nlm.nih.gov/articles/PMC3250369/)
+- **Baigutanova, A. 외(2025), *Scientific Data*, 12, 1474.** 국내 참가자 49명의 4주 수면일지가 어떻게 수집됐는지 확인했습니다. [A continuous real-world dataset comprising wearable-based heart rate variability alongside sleep diaries](https://doi.org/10.1038/s41597-025-05801-3)
 
-자료를 사용한 부분과 설명한 방법을 확인할 수 있도록 다음 자료도 함께 참고했습니다.
+### 8-2. 사용한 데이터 출처
 
-- [MeLiDos 공식 프로젝트와 자료 구성](https://github.com/MeLiDosProject/melidosData): 해외 원자료의 수집 배경과 지역별 공개 자료를 확인했습니다.
-- [MeLiDos 수면일지 변수 사전](https://github.com/MeLiDosProject/melidosData/blob/main/inst/ext/DataDictionary_sleepdiary.csv): 원본 항목의 뜻을 확인할 수 있습니다.
-- Baigutanova, A. 외(2025), [A continuous real-world dataset comprising wearable-based heart rate variability alongside sleep diaries](https://doi.org/10.1038/s41597-025-05801-3), *Scientific Data*, 12, 1474: 국내 49명·4주 자료의 수집 배경을 설명한 원 논문입니다.
-- 제공받은 AI+X 프로젝트 기술 블로그 PDF: 배경 설명, 방법 선택 이유, 결과 그림의 해석, 추가 비교와 고찰을 연결하는 글의 구성에 참고했습니다. 해당 예시의 데이터·실험 수치는 본 프로젝트의 결과에 사용하지 않았습니다.
+- **해외 수면일지.** MeLiDos 공개 자료 중 9개 지역의 수면일지를 모델 학습과 해외 평가에 사용했습니다. [MeLiDos 공식 프로젝트](https://github.com/MeLiDosProject/melidosData) · [9개 지역별 원자료 목록](/데이터%28Dataset%29/출처.md) · [수면일지 변수 사전](https://github.com/MeLiDosProject/melidosData/blob/main/inst/ext/DataDictionary_sleepdiary.csv)
+- **국내 수면일지.** 공개 자료에서 참가자 49명의 4주 수면일지를 가져와 모델 A의 성능을 확인했습니다. [Figshare 공개 데이터](https://doi.org/10.6084/m9.figshare.28509740)
+
+### 8-3. 배경 조사와 기사
+
+- **통계청 2024년 생활시간조사.** 잠을 이루지 못한 사람의 비율과 평균 시간을 확인하는 데 참고했습니다. [조사 결과](https://mods.go.kr/board.es?act=view&bid=220&list_no=437764&mid=a10301010000) · [한국일보 관련 보도](https://www.hankookilbo.com/news/article/A2025072810120003470)
+- **KB경영연구소 2026 한국 웰니스 보고서.** 응답자가 어떤 상황에서 수면의 질이 낮다고 느꼈는지 살펴봤습니다. [한국 웰니스 보고서](https://www.kbfg.com/kbresearch/cmm/fms/FileDown.do?atchFileId=FILE_000000002001580&fileSn=0)
+
+### 8-4. 사진·그림 출처
+
+- **1-1절 알람 시계 사진.** Anastasiya Vragova 촬영. [Pexels 원본](https://www.pexels.com/photo/an-alarm-clock-on-bedside-near-a-sleeping-woman-8346006/)
+- **사례 1의 연령대별 그래프.** [통계청 2024년 생활시간조사 결과, 9쪽](https://mods.go.kr/boardDownload.es?bid=220&list_no=437764&seq=9#page=16)
+- **사례 2의 수면의 질이 낮다고 느끼는 상황 그래프.** [KB경영연구소 2026 한국 웰니스 보고서, 37쪽 그림 III-14](https://www.kbfg.com/kbresearch/cmm/fms/FileDown.do?atchFileId=FILE_000000002001580&fileSn=0#page=45)
+- **2-4절 데이터 분석 과정 그림.** [개발어린이, 데이터 분석 과정과 전처리의 중요성](https://ahnty0122.tistory.com/61)
+- **6절 고찰 첫머리의 흑백 삽화.** [La Izquierda Diario 게재 이미지](https://www.laizquierdadiario.com/Los-planes-de-estudios-las-ciencias-sociales-y-el-marxismo)
+- **팀 제작 그림.** 사례 3 그래프는 국내 수면일지를 집계해 만들었습니다. 프로젝트 흐름도, 모델 설명 그림과 성능 그래프는 팀의 구현 내용과 실험 결과를 바탕으로 제작했습니다.
+
+### 8-5. 구현·평가 자료
+
+- **라이브러리 공식 문서.** 학습 중 Dropout의 동작과 평균 절대 오차(MAE)의 계산법을 확인했습니다. [PyTorch Dropout](https://docs.pytorch.org/docs/2.7/generated/torch.nn.Dropout.html) · [scikit-learn MAE](https://scikit-learn.org/1.7/modules/generated/sklearn.metrics.mean_absolute_error.html)
+- **프로젝트 실험 결과.** [교차검증 결과](/실험결과%28Experiment%20Results%29/교차검증/cv_summary.csv) · [별도 평가 결과](/실험결과%28Experiment%20Results%29/테스트/holdout_metrics.csv) · [오차 분석](/실험결과%28Experiment%20Results%29/상세분석) · [취침 시각 시연 결과](/예측시연%28Prediction%20Demo%29/예측결과.json)
+- **과제에서 제공한 AI+X 기술 블로그 예시 PDF.** 프로젝트 배경에서 모델 선택, 결과 해석, 고찰까지 글을 이어가는 구성을 참고했습니다.
