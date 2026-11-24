@@ -1,8 +1,8 @@
 {
   "input_type": "illustrative_history",
   "models": {
-    "A": "모델/최종/model_A_selected.joblib",
-    "B": "모델/최종/model_B_selected.joblib"
+    "A": "모델(Model)/최종/model_A_selected.joblib",
+    "B": "모델(Model)/최종/model_B_selected.joblib"
   },
   "features": {
     "past3_latency_median_min": 25.0,

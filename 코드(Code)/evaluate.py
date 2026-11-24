@@ -17,7 +17,7 @@ import gradient_boosting
 import mlp
 import random_forest
 import ridge_regression
-from paths import (REPO, DATA_DIR, CV_DIR, TEST_DIR, FINAL_MODELS,
+from paths import (REPO, DATA_DIR, RESULTS_DIR, CV_DIR, TEST_DIR, FINAL_MODELS,
                    COMPARISON_MODELS, FIGURE_DIR, ENV_DIR)
 from prepare import FEATURES
 ROOT = REPO
@@ -152,7 +152,7 @@ def plot_learning(history, FIGURE_DIR):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, default=DATA_DIR)
-    parser.add_argument("--output", type=Path, default=REPO / "실험결과")
+    parser.add_argument("--output", type=Path, default=RESULTS_DIR)
     args = parser.parse_args()
     out = args.output
     cv_out, test_out = out / "교차검증", out / "테스트"

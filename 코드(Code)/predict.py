@@ -9,7 +9,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from paths import REPO, model_file
+from paths import DEMO_DIR, REPO, model_file
 
 
 def positive_minutes(value, allow_zero=False):
@@ -106,7 +106,7 @@ def run_example(example):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, default=REPO / "예측시연" / "입력예시.json")
+    parser.add_argument("--input", type=Path, default=DEMO_DIR / "입력예시.json")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     try:

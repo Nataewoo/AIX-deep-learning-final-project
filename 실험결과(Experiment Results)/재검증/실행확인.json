@@ -122,6 +122,6 @@
   "limits": [
     "Original full hyperparameter search and model training were not rerun.",
     "PyTorch saved-model inference and NumPy inference were both verified.",
-    "Historical analysis outputs remain under 실험결과/상세분석; new checks are stored separately."
+    "Historical analysis outputs remain under 실험결과(Experiment Results)/상세분석; new checks are stored separately."
   ]
 }

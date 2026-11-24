@@ -1,6 +1,6 @@
 """Recompute saved sleep-model results without retraining or test-set tuning.
 
-Run from the repository root using the command in "실행환경/실행환경 안내.md".
+Run from the repository root using the command in "실행환경(Runtime Environment)/실행환경 안내.md".
 Dependencies: numpy, pandas, matplotlib, joblib, scikit-learn==1.7.2.
 Only deserialize model files supplied in the trusted team package.
 """
@@ -25,8 +25,8 @@ from matplotlib import pyplot as plt
 import joblib
 import sklearn
 import scipy
-from paths import (REPO, DATA_ROOT, DATA_DIR, CV_DIR, TEST_DIR, TREE_DIR,
-                   ENV_DIR, model_file)
+from paths import (REPO, DATA_ROOT, DATA_DIR, RESULTS_DIR, CV_DIR, TEST_DIR, TREE_DIR,
+                   ENV_DIR, FIGURE_DIR, MODEL_DIR, model_file)
 
 FEATURES = ['past3_latency_median_min', 'past3_latency_n',
             'prev_sleep_interval_min', 'past3_sleep_interval_median_min',
@@ -75,26 +75,28 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=REPO)
     args = parser.parse_args()
-    package, output = REPO, args.output.resolve()
-    out, figs = output / '실험결과' / '상세분석', output / '그림'
+    output = args.output.resolve()
+    out = output / RESULTS_DIR.name / '상세분석'
+    figs = output / FIGURE_DIR.name
     out.mkdir(parents=True, exist_ok=True)
     figs.mkdir(parents=True, exist_ok=True)
     matplotlib.rcParams.update({'font.family': 'Malgun Gothic', 'axes.unicode_minus': False,
                                'font.size': 11, 'axes.spines.top': False,
                                'axes.spines.right': False, 'savefig.facecolor': 'white',
                                'figure.facecolor': 'white', 'axes.titleweight': 'bold'})
-    frames = {name: pd.read_csv(package / '데이터' / '전처리' / (name + '.csv')) for name in
+    frames = {name: pd.read_csv(DATA_DIR / (name + '.csv')) for name in
               ('train_melidos_all', 'test_melidos', 'test_korea')}
     checks = []
     def check(name, detail):
         checks.append({'check': name, 'status': 'PASS', 'detail': detail})
 
     # Reconstruct prepared data from original, selected source records.
-    spec = importlib.util.spec_from_file_location('sleep_prepare', Path(__file__).resolve().parent / 'prepare.py')
+    code_dir = Path(__file__).resolve().parent
+    spec = importlib.util.spec_from_file_location('sleep_prepare', code_dir / 'prepare.py')
     prep = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(prep)
     for name, original in frames.items():
-        recreated = prep.extract(package / '데이터', 'train_melidos' if name == 'train_melidos_all' else name)
+        recreated = prep.extract(DATA_ROOT, 'train_melidos' if name == 'train_melidos_all' else name)
         pd.testing.assert_frame_equal(original, recreated, check_dtype=False, check_exact=False,
                                       rtol=1e-9, atol=1e-8)
         check('raw_to_prepared_' + name, f'{len(original)} records match stored prepared table')
@@ -367,9 +369,9 @@ def main():
     ax.text(.02,.02,'학습 자료 5~95백분위 내 30분 간격 · 추천 효과를 검증한 결과 아님',transform=ax.transAxes,fontsize=9)
     save(fig,'09_B_duration_behavior.png')
 
-    hashes={str(p.relative_to(package)):hashlib.sha256(p.read_bytes()).hexdigest()
-            for folder in ('데이터', '코드', '모델', '실험결과/교차검증', '실험결과/테스트', '실험결과/추가트리비교')
-            for p in (package / folder).rglob('*') if p.is_file() and p.suffix in {'.csv','.py','.joblib','.json'}}
+    hashes={p.relative_to(REPO).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
+            for folder in (DATA_ROOT, code_dir, MODEL_DIR, CV_DIR, TEST_DIR, TREE_DIR)
+            for p in folder.rglob('*') if p.is_file() and p.suffix in {'.csv','.py','.joblib','.json'}}
     report={'verification_method':'Raw-source reconstruction + saved CSV metrics + sklearn scaler / NumPy MLP forward pass',
             'no_retraining':True,'original_pytorch_verify_executed':False,
             'full_original_source_verified':True,
@@ -415,9 +417,11 @@ def main():
              '- verified_paired_intervals.csv: MLP 대비 기준선 및 입력 제외 모델의 참가자 단위 불확실성',
              '- latency_bands.csv / quality_bands.csv / history_bands.csv / site_errors.csv: 하위집단별 오차',
              '- audit_report.json: 검증 결과, 버전, 원본 SHA-256',
-             '- ../../그림: 완전한 평가 행을 사용한 PNG 그래프 9개',
-             '- ../../코드/analyze_results.py: 본 분석의 재실행 코드',
-             '', '모든 분석의 자료 출처: 데이터/전처리, 실험결과/테스트, 실험결과/추가트리비교, 데이터/원본.']
+             f'- `../../{FIGURE_DIR.name}`: 완전한 평가 행을 사용한 PNG 그래프 9개',
+             f'- `../../{code_dir.name}/analyze_results.py`: 본 분석의 재실행 코드',
+             '', f'모든 분석의 자료 출처는 `{DATA_DIR.relative_to(REPO).as_posix()}`, '
+             f'`{TEST_DIR.relative_to(REPO).as_posix()}`, `{TREE_DIR.relative_to(REPO).as_posix()}`, '
+             f'`{DATA_ROOT.name}/원본`이다.']
     (out/'audit_summary.md').write_text('\n'.join(summary),encoding='utf-8')
     print(json.dumps({'checks':len(checks),'model_comparisons':len(inference),'output':str(out),
                       'max_prediction_difference':max(x['max_absolute_prediction_difference'] for x in inference)},ensure_ascii=False))
