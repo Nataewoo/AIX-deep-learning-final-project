@@ -727,6 +727,21 @@ RMSE의 ‘제곱근’은 자기 자신을 곱했을 때 원래 수가 되는 �
   - **Carney, C. E. 외(2012), *Sleep*, 35(2), 287–302.** 표준 수면일지에서 잠자리에 든 시각과 잠을 청하기 시작한 시각을 따로 기록하는 방식을 확인했습니다. [The Consensus Sleep Diary: Standardizing Prospective Sleep Self-Monitoring](https://pmc.ncbi.nlm.nih.gov/articles/PMC3250369/)
   - **Baigutanova, A. 외(2025), *Scientific Data*, 12, 1474.** 국내 참가자 49명의 4주 수면일지가 어떻게 수집됐는지 확인했습니다. [A continuous real-world dataset comprising wearable-based heart rate variability alongside sleep diaries](https://doi.org/10.1038/s41597-025-05801-3)
 
+- **수업교안 참고**
+  - **`ai-module-03-learning.pdf` · Learning (Module 3), PDF 23쪽과 30쪽.** 결정나무가 조건에 따라 자료를 나누는 원리와 표 형태의 데이터에서 트리 모델과 신경망을 비교하는 배경을 참고했습니다(3장).
+  - **`ai-module-04-1-nn.pdf` · Neural Network (Module 4-1), PDF 17쪽, 24쪽, 28쪽.** 신경망의 층 구조, Sigmoid 활성화 함수, 오차를 바탕으로 가중치를 조정하는 역전파의 원리를 참고했습니다(3장).
+  - **`ai-module-04-2-nn.pdf` · Neural Network (Module 4-2), PDF 6–8쪽, 10–11쪽, 17–18쪽.** 학습과 테스트 자료를 나누는 이유, 에포크의 뜻, 가중치에 제약을 주는 방법, Dropout·ReLU·배치 학습 설명을 참고했습니다(3·4장).
+
+- **3~5장 참고 문헌**
+  - **3-2절 모델 비교 배경.** Grinsztajn, L., Oyallon, E., & Varoquaux, G.(2022), *NeurIPS*. 표 형태의 데이터에서 트리 모델과 신경망을 함께 비교한 연구입니다. [Why do tree-based models still outperform deep learning on typical tabular data?](https://papers.nips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract.html)
+  - **3-4절 Ridge Regression.** Hoerl, A. E., & Kennard, R. W.(1970), *Technometrics*, 12(1), 55–67. 회귀 모델에서 계수의 크기를 제한하는 Ridge 방법의 원 논문입니다. [Ridge Regression: Biased Estimation for Nonorthogonal Problems](https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf)
+  - **3-5절 Random Forest.** Breiman, L.(2001), *Machine Learning*, 45, 5–32. 무작위성을 넣어 만든 여러 결정나무의 예측을 결합하는 원리를 설명합니다. [Random Forests](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf)
+  - **3-6절 Gradient Boosting.** Friedman, J. H.(2001), *The Annals of Statistics*, 29(5), 1189–1232. 예측을 보완하는 모델을 순차적으로 더하는 Gradient Boosting의 원 논문입니다. [Greedy Function Approximation: A Gradient Boosting Machine](https://doi.org/10.1214/aos/1013203451)
+  - **3-7·3-9절 MLP의 학습.** Rumelhart, D. E., Hinton, G. E., & Williams, R. J.(1986)는 역전파를, Srivastava, N. 외(2014)는 Dropout을, Kingma, D. P., & Ba, J.(2015)는 Adam을 설명했습니다. [Learning representations by back-propagating errors](https://www.nature.com/articles/323533a0) · [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://jmlr.org/papers/v15/srivastava14a.html) · [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980)
+  - **3-8·5-3절 XGBoost.** Chen, T., & Guestrin, C.(2016), *KDD*. 추가 비교에 사용한 XGBoost의 트리 부스팅 방식과 나무의 복잡도에 제약을 주는 방법을 설명합니다. [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/abs/1603.02754)
+  - **3-10·4-1절 모델 선택과 별도 평가.** Roberts, D. R. 외(2017)는 서로 관련된 관측값을 묶어 교차검증하는 방법을 다뤘습니다. Varma, S., & Simon, R.(2006)은 모델을 고를 때 사용한 교차검증 점수를 그대로 최종 성능으로 해석하면 오차가 작게 추정될 수 있음을 보였습니다. [Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure](https://doi.org/10.1111/ecog.02881) · [Bias in error estimation when using cross-validation for model selection](https://pmc.ncbi.nlm.nih.gov/articles/PMC1397873/)
+  - **5-3절 참가자 단위 재표집.** Efron, B.(1979)는 관측값을 중복을 허용해 다시 뽑는 부트스트랩을, Field, C. A., & Welsh, A. H.(2007)는 묶음으로 구성된 자료의 재표집을 다뤘습니다. 이번 분석에서는 한 사람의 기준선 결과와 MLP 결과를 함께 유지하며 참가자를 다시 뽑았습니다. [Bootstrap Methods: Another Look at the Jackknife](https://doi.org/10.1214/aos/1176344552) · [Bootstrapping clustered data](https://doi.org/10.1111/j.1467-9868.2007.00593.x)
+
 - **사용한 데이터 출처**
   - **해외 수면일지.** MeLiDos 공개 자료 중 9개 지역의 수면일지를 모델 학습과 해외 평가에 사용했습니다. [MeLiDos 공식 프로젝트](https://github.com/MeLiDosProject/melidosData) · [9개 지역별 원자료 목록](/데이터%28Dataset%29/출처.md) · [수면일지 변수 사전](https://github.com/MeLiDosProject/melidosData/blob/main/inst/ext/DataDictionary_sleepdiary.csv)
   - **국내 수면일지.** 공개 자료에서 참가자 49명의 4주 수면일지를 가져와 모델 A의 성능을 확인했습니다. [Figshare 공개 데이터](https://doi.org/10.6084/m9.figshare.28509740)
@@ -744,6 +759,6 @@ RMSE의 ‘제곱근’은 자기 자신을 곱했을 때 원래 수가 되는 �
   - **팀 제작 그림.** 사례 3 그래프는 국내 수면일지를 집계해 만들었습니다. 프로젝트 흐름도, 모델 설명 그림과 성능 그래프는 팀의 구현 내용과 실험 결과를 바탕으로 제작했습니다.
 
 - **구현·평가 자료**
-  - **라이브러리 공식 문서.** 학습 중 Dropout의 동작과 평균 절대 오차(MAE)의 계산법을 확인했습니다. [PyTorch Dropout](https://docs.pytorch.org/docs/2.7/generated/torch.nn.Dropout.html) · [scikit-learn MAE](https://scikit-learn.org/1.7/modules/generated/sklearn.metrics.mean_absolute_error.html)
-  - **프로젝트 실험 결과.** [교차검증 결과](/실험결과%28Experiment%20Results%29/교차검증/cv_summary.csv) · [별도 평가 결과](/실험결과%28Experiment%20Results%29/테스트/holdout_metrics.csv) · [오차 분석](/실험결과%28Experiment%20Results%29/상세분석) · [취침 시각 시연 결과](/예측시연%28Prediction%20Demo%29/예측결과.json)
+  - **라이브러리 공식 문서.** 학습 중 Dropout의 동작, 같은 그룹의 기록을 함께 나누는 교차검증의 원리, MAE·RMSE의 계산법을 확인했습니다. [PyTorch Dropout](https://docs.pytorch.org/docs/2.7/generated/torch.nn.Dropout.html) · [scikit-learn GroupKFold](https://scikit-learn.org/1.7/modules/generated/sklearn.model_selection.GroupKFold.html) · [scikit-learn MAE](https://scikit-learn.org/1.7/modules/generated/sklearn.metrics.mean_absolute_error.html) · [scikit-learn RMSE](https://scikit-learn.org/1.7/modules/generated/sklearn.metrics.root_mean_squared_error.html)
+  - **프로젝트 실험 결과.** [교차검증 결과](/실험결과%28Experiment%20Results%29/교차검증/cv_summary.csv) · [별도 평가 결과](/실험결과%28Experiment%20Results%29/테스트/holdout_metrics.csv) · [오차 분석](/실험결과%28Experiment%20Results%29/상세분석) · [참가자 단위 재표집 결과](/실험결과%28Experiment%20Results%29/테스트/paired_intervals.csv) · [추가 트리 비교](/실험결과%28Experiment%20Results%29/추가트리비교/RESULTS.md) · [취침 시각 시연 결과](/예측시연%28Prediction%20Demo%29/예측결과.json)
   - **과제에서 제공한 AI+X 기술 블로그 예시 PDF.** 프로젝트 배경에서 모델 선택, 결과 해석, 고찰까지 글을 이어가는 구성을 참고했습니다.
