@@ -17,8 +17,8 @@ import gradient_boosting
 import mlp
 import random_forest
 import ridge_regression
-from paths import (REPO, DATA_DIR, RESULTS_DIR, CV_DIR, TEST_DIR, FINAL_MODELS,
-                   COMPARISON_MODELS, FIGURE_DIR, ENV_DIR)
+from paths import (REPO, DATA_DIR, RESULTS_DIR, CV_DIR, TEST_DIR, MODEL_DIR,
+                   FINAL_MODELS, COMPARISON_MODELS, FIGURE_DIR, ENV_DIR)
 from prepare import FEATURES
 ROOT = REPO
 TARGET = {"A": "bed_to_sleep_min", "B": "sleep_quality"}
@@ -133,7 +133,7 @@ def save_model(path, task, choice, fitted):
         joblib.dump({"task": task, **choice, "estimator": fitted}, path)
 
 
-def plot_learning(history, FIGURE_DIR):
+def plot_learning(history, figure_dir):
     fig, axes = plt.subplots(2, 2, figsize=(9, 5), layout="constrained")
     for col, task in enumerate(("A", "B")):
         df = history[history.task == task]
@@ -145,18 +145,24 @@ def plot_learning(history, FIGURE_DIR):
                 axes[row, col].plot(run.epoch, run[feature], label=str(seed), alpha=0.8)
             axes[row, col].set(title=f"{task} | {title}", xlabel="Epoch")
     axes[0, 0].legend(title="Seed")
-    fig.savefig(out / "learning_curves.png", dpi=160)
+    fig.savefig(figure_dir / "learning_curves.png", dpi=160)
     plt.close(fig)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, default=DATA_DIR)
-    parser.add_argument("--output", type=Path, default=RESULTS_DIR)
+    parser.add_argument("--output", type=Path,
+                        help="Write all artifacts under this directory instead of the repository defaults.")
     args = parser.parse_args()
-    out = args.output
-    cv_out, test_out = out / "교차검증", out / "테스트"
-    for directory in (cv_out, test_out, FINAL_MODELS, COMPARISON_MODELS, FIGURE_DIR, ENV_DIR):
+    output = args.output
+    results_dir = RESULTS_DIR if output is None else output
+    models_dir = MODEL_DIR if output is None else output / MODEL_DIR.name
+    figure_dir = FIGURE_DIR if output is None else output / FIGURE_DIR.name
+    env_dir = ENV_DIR if output is None else output / ENV_DIR.name
+    cv_out, test_out = results_dir / CV_DIR.name, results_dir / TEST_DIR.name
+    model_outputs = {"selected": models_dir / FINAL_MODELS.name, "mlp": models_dir / COMPARISON_MODELS.name}
+    for directory in (cv_out, test_out, *model_outputs.values(), figure_dir, env_dir):
         directory.mkdir(parents=True, exist_ok=True)
     torch.set_num_threads(1)
     all_train = pd.read_csv(args.data / "train_melidos_all.csv")
@@ -186,7 +192,7 @@ def main():
     pd.DataFrame(fold_results).to_csv(cv_out / "cv_by_fold.csv", index=False)
     history = pd.DataFrame(histories)
     history.to_csv(cv_out / "learning_curves.csv", index=False)
-    plot_learning(history, FIGURE_DIR)
+    plot_learning(history, figure_dir)
     (cv_out / "selection.json").write_text(json.dumps(choices, indent=2), encoding="utf-8")
     print("Selection frozen. Scoring holdout data.", flush=True)
     melidos = pd.read_csv(args.data / "test_melidos.csv")
@@ -204,8 +210,8 @@ def main():
         for role, info in options.items():
             kind, params, features = info["model"], info["params"], info["features"]
             fitted, _ = fit(task, kind, params, rows, features)
-            if role in {"selected", "mlp"}:
-                save_model((FINAL_MODELS if role == "selected" else COMPARISON_MODELS) / f"model_{task}_{role}.joblib", task, info, fitted)
+            if role in model_outputs:
+                save_model(model_outputs[role] / f"model_{task}_{role}.joblib", task, info, fitted)
             for dataset, subset in datasets.items():
                 pred = predict(task, kind, fitted, subset, features)
                 assert np.isfinite(pred).all()
@@ -221,7 +227,7 @@ def main():
     versions = {"python": platform.python_version(), "torch": torch.__version__,
                 "sklearn": sklearn.__version__, "pandas": pd.__version__,
                 "numpy": np.__version__, "matplotlib": matplotlib.__version__, "joblib": joblib.__version__}
-    (ENV_DIR / "versions.json").write_text(json.dumps(versions, indent=2), encoding="utf-8")
+    (env_dir / "versions.json").write_text(json.dumps(versions, indent=2), encoding="utf-8")
     print(pd.DataFrame(results).to_string(index=False), flush=True)
 
 
