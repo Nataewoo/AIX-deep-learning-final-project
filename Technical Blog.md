@@ -792,7 +792,7 @@ RMSE의 ‘제곱근’은 자기 자신을 곱했을 때 원래 수가 되는 �
 
 The slides explain how sleep diary entries become model inputs, how the predictions were evaluated, and how the two models estimate a bedtime.
 
-[Download the supplementary slides (HTML)](presentation/sleep-diary-supplement.html?raw=true) and open the file in a web browser.
+Open the [supplementary slides (HTML)](presentation/sleep-diary-supplement.html), select **Download raw file** on GitHub, and open the downloaded file in a browser.
 
 ## 8. 참고자료 (Related Work)
 
