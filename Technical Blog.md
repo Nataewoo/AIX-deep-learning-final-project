@@ -21,9 +21,9 @@
 - [4. 최종 모델 테스트 (Test Results)](#4-최종-모델-테스트-test-results)
 - [5. 모델 평가와 오차 분석 (Evaluation & Analysis)](#5-모델-평가와-오차-분석-evaluation--analysis)
 - [6. 고찰 (Conclusion & Discussion)](#6-고찰-conclusion--discussion)
-- [7. 프로젝트 발표 (Project Presentation)](#7-프로젝트-발표-project-presentation)
-  - [7-1. Presentation Video](#7-1-presentation-video)
-  - [7-2. Supplementary Presentation Materials](#7-2-supplementary-presentation-materials)
+- [7. 프로젝트 발표](#7-프로젝트-발표)
+  - [7-1. 발표 영상](#7-1-발표-영상)
+  - [7-2. 추가 이해를 위한 설명 자료](#7-2-추가-이해를-위한-설명-자료)
 - [8. 참고자료 (Related Work)](#8-참고자료-related-work)
 
 ## 0. 프로젝트 팀원 및 역할 소개
@@ -782,17 +782,17 @@ RMSE의 ‘제곱근’은 자기 자신을 곱했을 때 원래 수가 되는 �
 2. **자료를 더 모으고, 새로운 참가자로 모델 비교하기.** 더 긴 기간의 일지를 모으고 국내 자료에도 수면의 질 점수를 기록하면, 수면 패턴이 시간에 따라 어떻게 바뀌는지 살펴보고 국내 참가자에게도 모델 B를 평가할 수 있습니다. 기준선, MLP, XGBoost, Random Forest의 설정은 학습 자료 안에서 비교해 확정한 뒤, 개발에 쓰지 않은 참가자의 기록에서 성능을 확인하겠습니다.
 3. **제안한 취침 시각이 실제로 도움이 되는지 확인하기.** 같은 목표 기상 시각을 두고, 한 사람 안에서 평소대로 누운 날과 모델이 제안한 시각에 누운 날을 비교하는 실험을 해 볼 수 있습니다. 다음 날의 컨디션, 실제로 잠들기까지 걸린 시간, 제안한 시각을 지키기 쉬웠는지를 함께 기록하면 생활에서 쓸 만한지 판단할 수 있습니다.
 
-## 7. 프로젝트 발표 (Project Presentation)
+## 7. 프로젝트 발표
 
-### 7-1. Presentation Video
+### 7-1. 발표 영상
 
-[Watch the Team G03 presentation on YouTube](https://www.youtube.com/watch?v=3mqcGASV06Q)
+[https://www.youtube.com/watch?v=3mqcGASV06Q](https://www.youtube.com/watch?v=3mqcGASV06Q)
 
-### 7-2. Supplementary Presentation Materials
+### 7-2. 추가 이해를 위한 설명 자료
 
-The slides explain how sleep diary entries become model inputs, how the predictions were evaluated, and how the two models estimate a bedtime.
+수면일지에서 모델 입력을 만드는 과정, 예측 결과를 평가하는 방법, 두 모델로 취침 시각을 추정하는 과정을 설명합니다.
 
-Open the [supplementary slides (HTML)](presentation/sleep-diary-supplement.html), select **Download raw file** on GitHub, and open the downloaded file in a browser.
+[추가 발표 자료(HTML)](presentation/sleep-diary-supplement.html)에서 다운로드 아이콘을 눌러 파일을 내려받은 뒤 브라우저에서 열어 주세요.
 
 ## 8. 참고자료 (Related Work)
 
